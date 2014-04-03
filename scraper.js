@@ -47,25 +47,26 @@ var parse_taetigkeiten = function(t) {
 				"level": null,
 				"end": null,
 				"periodical": "einmalig",
-				"head": t.head,
-				"fragment": f
+				"text": [t.head, f].join(", ").replace(/,[ ,]+/g, ', ')
 			}
 			
+			var q = [t.head, f].join(", ").replace(/,[ ,]+/g, ', ');
+			
 			/* check for ending information */
-			var ending = l.match(/\(bis ([^\)]+)\)/);
+			var ending = q.match(/\(bis ([^\)]+)\)/);
 			if (ending) {
 				item.end = ending[1];
-				l.replace(/\(bis ([^\)]+)\)/g,''); // to not confuse with year
+				q = q.replace(/\(bis ([^\)]+)\)/g,''); // to not confuse with year
 			}
 			
 			/* check for periodical */
-			var periodical = l.match(/(monatlich|jährlich)/)
+			var periodical = q.match(/(monatlich|jährlich)/)
 			if (periodical) {
 				item.periodical = periodical[1];
 			}
 			
 			/* check for level */
-			var level = l.match(/Stufe ([0-9]+)/i);
+			var level = q.match(/Stufe ([0-9]+)/i);
 			if (level) {
 				item.level = parseInt(level[1],10);
 			} else {
@@ -73,7 +74,7 @@ var parse_taetigkeiten = function(t) {
 			}
 			
 			/* check for year */
-			var year = l.match(/(20(09|10|11|12|13))/);
+			var year = q.match(/(20(13|14))/);
 			if (year) {
 				item.year = parseInt(year[1],10);
 			}
@@ -91,7 +92,7 @@ var parse_taetigkeiten = function(t) {
 /* scrape bundestag */
 var scrape = function(_callback){
 	var data = [];
-	var base_url = "http://www.bundestag.de/bundestag/abgeordnete17/alphabet/index.html";
+	var base_url = "http://www.bundestag.de/bundestag/abgeordnete18/alphabet/index.html";
 	scraper.scrape(base_url, "html", function(err, $){
 		if (err) {
 			_callback(err);
@@ -112,7 +113,7 @@ var scrape = function(_callback){
 						"ausschuesse": [],
 						"wahlkreis": null,
 						"mandat": null,
-						"kontakt": [],
+//						"kontakt": [],
 						"web": [],
 						"nebeneinkuenfte": []
 					};
@@ -257,14 +258,18 @@ var scrape = function(_callback){
 								/* activate evaluation on parts 2. and 3. */
 								if ($t.is("h3")) {
 									var _firstpar = true;
-									switch($t.text().substr(0,2)) {
-										case "2.":
-											_active = true;
-											_section = "2";
+									_section = $t.text().replace(/^\s+|\s+$/g,"");
+									switch(_section) {
+										case "Berufliche Tätigkeit vor der Mitgliedschaft im Deutschen Bundestag": 
+											_active = false;
 										break;
-										case "3.":
+										case "Funktionen in Vereinen, Verbänden und Stiftungen": 
+										case "Funktionen in Unternehmen": 
+										case "Funktionen in Körperschaften und Anstalten des öffentlichen Rechts": 
+										case "Entgeltliche Tätigkeiten neben dem Mandat": 
+										case "Beteiligungen an Kapital- oder Personengesellschaften": 
+										case "Vereinbarungen über künftige Tätigkeiten oder Vermögensvorteile": 
 											_active = true;
-											_section = "3";
 										break;
 										default: 
 											_active = false;
@@ -303,7 +308,7 @@ var scrape = function(_callback){
 
 							/* refine items */
 							_items.forEach(function(item){
-								_data["nebeneinkuenfte"].push(parse_taetigkeiten(item));
+								_data["nebeneinkuenfte"] = _data["nebeneinkuenfte"].concat(parse_taetigkeiten(item));
 							});
 							_data["nebeneinkuenfte"].filter(function(i){
 								return (i !== null);
