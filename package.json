@@ -1,25 +1,30 @@
 {
 	"private": true,
 	"name": "nebeneinkuenfte-scraper",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "a scraper for data on ancillary activity and income of members of the german parliament.",
-	"licenses": [{
-		"type": "Public Domain",
-		"url": "http://unlicense.org/UNLICENSE"
-	}],
+	"licenses": [
+		{
+			"type": "Public Domain",
+			"url": "http://unlicense.org/UNLICENSE"
+		}
+	],
 	"author": "Sebastian Vollnhals <sv@datenfreunde.com>",
-	"maintainers": [{
-		"name": "Sebastian Vollnhals",
-		"email": "sv@datenfreunde.com",
-		"web": "http://datenfreunde.com/"
-	}],
-	"main": "./nebeneinkuenfte.js",
+	"maintainers": [
+		{
+			"name": "Sebastian Vollnhals",
+			"email": "sv@datenfreunde.com",
+			"web": "http://datenfreunde.com/"
+		}
+	],
+	"main": "./scraper.js",
 	"bin": {
-		"nebeneinkuenfte": "./nebeneinkuenfte.js"
+		"nebeneinkuenfte-scraper": "./scraper.js",
+		"nebeneinkuenfte-converter": "./converter.js",
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/opendatacity/nebeneinkuenfte.git"
+		"url": "https://github.com/opendatacity/nebeneinkuenfte-scraper.git"
 	},
 	"keywords": [
 		"opendata",
