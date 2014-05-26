@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Nebeneinkünfte der Abgeordneten im Deutschen Bundestag</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- link rel="stylesheet" type="text/css" href="assets/fonts/font.css" -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/nebeneinkuenfte.css">
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="assets/js/nebeneinkuenfte.js"></script>
+		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/html5shiv.min.js"></script><![endif]-->
+		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/respond.min.js"></script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<h1>Nebeneinkünfte <small>der Abgeordneten im Deutschen Bundestag</small></h1>
+		</header>
+		<div id="main" class="container">
+			<div id="content">
+				<article id="gesamt">
+					<h2>Gesamter Bundestag</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="digit">Angaben</td>
+								<td rowspan="2" class="digit">Einkünfte</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#gesamt}}
+							<tr>
+								<td class="n">{{members}}</td>
+								<td class="n">{{earners}}</td>
+								<td class="n">{{#percent}}{{ratio_earners_per_member}}{{/percent}}</td>
+								<td class="c">{{items}}</td>
+								<td class="c">{{num}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								<td class="n">{{#total}}{{ratio_min_per_member}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/gesamt}}
+						</tbody>
+					</table>
+				</article>
+				<article id="abgeordnete">
+					<h2>Abgeordnete</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Name</td>
+								<td rowspan="2">Fraktion</td>
+								<td rowspan="2" class="digit">Angaben</td>
+								<td rowspan="2" class="digit">Einkünfte</td>
+								<td rowspan="2" class="currency">Mindesthöhe der Einkünfte</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#abgeordnete}}
+							<tr>
+								<td><a href="{{{url}}}">{{name}}</a></td>
+								<td>{{fraktion}}</td>
+								<td class="c">{{items}}</td>
+								<td class="c">{{num}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/abgeordnete}}
+						</tbody>
+					</table>
+				</article>
+				<article id="fraktionen">
+					<h2>Fraktionen</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Fraktion</td>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#fraktionen}}
+							<tr>
+								<td>{{name}}</td>
+								<td class="n">{{members}}</td>
+								<td class="n">{{earners}}</td>
+								<td class="n">{{#percent}}{{ratio_earners_per_member}}{{/percent}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								<td class="n">{{#total}}{{ratio_min_per_member}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/fraktionen}}
+						</tbody>
+					</table>
+				</article>
+				<article id="ausschuesse">
+					<h2>Ausschüsse</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Ausschuss</td>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#ausschuesse}}
+							<tr>
+								<td>{{name}}</td>
+								<td class="n">{{members}}</td>
+								<td class="n">{{earners}}</td>
+								<td class="n">{{#percent}}{{ratio_earners_per_member}}{{/percent}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								<td class="n">{{#total}}{{ratio_min_per_member}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/ausschuesse}}
+						</tbody>
+					</table>
+				</article>
+				<article id="mandate">
+					<h2>Bundesländer</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Bundesland</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#laender}}
+							<tr>
+								<td>{{name}}</td>
+								<td class="n">{{members}}</td>
+								<td class="n">{{earners}}</td>
+								<td class="n">{{#percent}}{{ratio_earners_per_member}}{{/percent}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								<td class="n">{{#total}}{{ratio_min_per_member}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/laender}}
+						</tbody>
+					</table>
+				</article>
+				<article id="mandate">
+					<h2>Mandate</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Mandat</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							{{#mandate}}
+							<tr>
+								<td>{{#direkt}}Direkt gewählt{{/direkt}}{{#liste}}Über Liste{{/liste}}</td>
+								<td class="n">{{members}}</td>
+								<td class="n">{{earners}}</td>
+								<td class="n">{{#percent}}{{ratio_earners_per_member}}{{/percent}}</td>
+								<td class="n">{{#total}}{{min}}{{/total}}</td>
+								<td class="n">{{#total}}{{ratio_min_per_member}}{{/total}}</td>
+								{{{format_map}}}
+							</tr>
+							{{/mandate}}
+						</tbody>
+					</table>
+				</article>
+			</div>
+		</div>
+		<div id="explanations">
+			<h2>Daten</h2>
+			<p>Download: <a href="data/data.json">JSON</a> oder <a href="data/data.json">TSV</a></p>
+			<h2>Sourcecode</h2>
+			<p><a href="https://github.com/opendatacity/nebeneinkuenfte">Github.com</a></p>
+		</div>
+		<div id="explanations">
+			<h2>Erläuterungen</h2>
+			<p>Die Angaben wurden aus den Abgeordneten-Biografien auf der Webeite des des Deutschen Bundestags automatisiert zusammengestellt. Da die Daten dort nicht in einem konsitenten maschinenlesbaren Format vorliegen können wir Fehler und Irrtümer nicht auschließen.</p>
+			<p>Bei allen Beträgen handelt es sich um den minimalen Betrag, der für die Angabe einer Stufe notwendig ist. Die realen Nebeneinkünfte liegen aller Wahrscheinlichkeit nach höher. Höchstbeträge konnten nicht berücksichtigt werden, da in der höchsten Stufe kein maximaler Betrag festgelegt ist.</p>
+			<p>Die errechneten Beträge sind die Summe aus einmaligen Einkünften, jährlichen Einkünften für jedes begonnene Kalenderjahr der laufenden Legislatur und monatlichen Einkünften für jeden begonnenen Kalendermonat der laufenden Legislatur, sofern kein Beginn oder Ende angegeben wurde.</p>
+			<p>Eine Aufschlüsselung nach Geschlecht konnte nicht vorgenommen werden, da diese Angabe den Abgeordneten-Biografien nicht zu entnehmen ist.</p>
+			<p>Stand: {{date}}</p>
+		</div>
+		<footer>
+			Ein Informationsangebot von <a href="https://opendatacity.de/" rel="follow" title="OpenDataCity">OpenDataCity</a>
+		</footer>
+	</body>
+</html>

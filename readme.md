@@ -5,7 +5,7 @@ Generiert Offene Daten aus den Angaben zu Nebentätigkeiten und Nebeneinkünften
 ## Installation
 
 ````
-git clone https://github.com/opendatacity/nebeneinkuenfte-scraper.git
+git clone https://github.com/opendatacity/nebeneinkuenfte.git
 cd nebeneinkuenfte
 npm install
 ````
@@ -15,13 +15,13 @@ npm install
 Daten von der Webseite des Deutschen Bundestages einsammeln:
 
 ````
-node scraper.js
+node bin/scraper.js
 ````
 
-JSON-Datensatz in TSV konvertieren:
+Auswertung erstellen:
 
 ````
-node converter.js
+node bin/generate.js
 ````
 
 ## License
