@@ -18,11 +18,21 @@
 	<body>
 		<header>
 			<h1>Nebeneinkünfte <small>der Abgeordneten im Deutschen Bundestag</small></h1>
-			<p>...</p>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#gesamt" data-toggle="tab">Gesamt</a></li>
+				<li><a href="#abgeordnete" data-toggle="tab">Abgeordnete</a></li>
+				<li><a href="#fraktionen" data-toggle="tab">Fraktionen</a></li>
+				<li><a href="#ausschuesse" data-toggle="tab">Ausschüsse</a></li>
+				<li><a href="#laender" data-toggle="tab">Bundesländer</a></li>
+				<li><a href="#geschlecht" data-toggle="tab">Geschlecht</a></li>
+				<li><a href="#mandate" data-toggle="tab">Mandate</a></li>
+				<li><a href="#erlaeuterungen" data-toggle="tab">Erläuterungen</a></li>
+				<li><a href="#daten" data-toggle="tab">Daten</a></li>
+			</ul>
 		</header>
 		<div id="main" class="container">
-			<div id="content">
-				<article id="gesamt">
+			<div id="content" class="tab-content">
+				<article class="tab-pane active" id="gesamt">
 					<h2>Gesamter Bundestag</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -32,9 +42,9 @@
 								<td rowspan="2" class="digit">%</td>
 								<td rowspan="2" class="digit">Angaben</td>
 								<td rowspan="2" class="digit">Einkünfte</td>
-								<td rowspan="2" class="digit">Gesamtbetrag (Minimum)</td>
-								<td rowspan="2" class="digit">Durchschnitt (Minimum)</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -54,16 +64,16 @@
 								<td class="n">631</td>
 								<td class="n">134</td>
 								<td class="n">21.24%</td>
-								<td class="c">316</td>
-								<td class="c">1037</td>
-								<td class="n">5 903 000,00 €</td>
-								<td class="n">9 354,99 €</td>
-								<td class="c">598</td><td class="c">194</td><td class="c">168</td><td class="c">40</td><td class="c">20</td><td class="c">6</td><td class="c">2</td><td class="c">3</td><td></td><td class="c">6</td>
+								<td class="c">317</td>
+								<td class="c">1030</td>
+								<td class="n">5 876 000,00 €</td>
+								<td class="n">9 312,20 €</td>
+								<td class="c">599</td><td class="c">186</td><td class="c">168</td><td class="c">40</td><td class="c">20</td><td class="c">6</td><td class="c">2</td><td class="c">3</td><td></td><td class="c">6</td>
 							</tr>
 						</tbody>
 					</table>
 				</article>
-				<article id="abgeordnete">
+				<article class="tab-pane" id="abgeordnete">
 					<h2>Abgeordnete</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -72,8 +82,8 @@
 								<td rowspan="2">Fraktion</td>
 								<td rowspan="2" class="digit">Angaben</td>
 								<td rowspan="2" class="digit">Einkünfte</td>
-								<td rowspan="2" class="digit">Mindesthöhe der Einkünfte</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Mindesthöhe der Einkünfte</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -154,14 +164,6 @@
 								<td></td><td></td><td></td><td></td><td></td><td></td><td class="c">2</td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/roettgen_norbert/258934">Dr. Norbert Röttgen</a></td>
-								<td>CDU&#x2F;CSU</td>
-								<td class="c">8</td>
-								<td class="c">40</td>
-								<td class="n">147 000,00 €</td>
-								<td></td><td class="c">38</td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/roering_johannes/258888">Johannes Röring</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">9</td>
@@ -184,6 +186,14 @@
 								<td class="c">9</td>
 								<td class="n">135 000,00 €</td>
 								<td></td><td></td><td></td><td class="c">9</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/roettgen_norbert/258934">Dr. Norbert Röttgen</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">8</td>
+								<td class="c">32</td>
+								<td class="n">119 000,00 €</td>
+								<td></td><td class="c">30</td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/W/woehrl_dagmar/259206">Dagmar G. Wöhrl</a></td>
@@ -234,14 +244,6 @@
 								<td class="c">9</td><td class="c">9</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/scheuer_andreas/258962">Andreas Scheuer</a></td>
-								<td>CDU&#x2F;CSU</td>
-								<td class="c">1</td>
-								<td class="c">9</td>
-								<td class="n">63 000,00 €</td>
-								<td></td><td></td><td class="c">9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/kruse_ruediger/258588">Rüdiger Kruse</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
@@ -252,6 +254,14 @@
 							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nietan_dietmar/258808">Dietmar Nietan</a></td>
 								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">9</td>
+								<td class="n">63 000,00 €</td>
+								<td></td><td></td><td class="c">9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/scheuer_andreas/258962">Andreas Scheuer</a></td>
+								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
 								<td class="c">9</td>
 								<td class="n">63 000,00 €</td>
@@ -506,22 +516,6 @@
 								<td class="c">11</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/groehe_hermann/258434">Hermann Gröhe</a></td>
-								<td>CDU&#x2F;CSU</td>
-								<td class="c">1</td>
-								<td class="c">3</td>
-								<td class="n">21 000,00 €</td>
-								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nahles_andrea/258818">Andrea Nahles</a></td>
-								<td>SPD</td>
-								<td class="c">1</td>
-								<td class="c">3</td>
-								<td class="n">21 000,00 €</td>
-								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/D/dobrindt_alexander/258284">Alexander Dobrindt</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
@@ -538,12 +532,36 @@
 								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/groehe_hermann/258434">Hermann Gröhe</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nahles_andrea/258818">Andrea Nahles</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hartmann_sebastian/258458">Sebastian Hartmann</a></td>
 								<td>SPD</td>
 								<td class="c">3</td>
 								<td class="c">11</td>
 								<td class="n">19 500,00 €</td>
 								<td class="c">9</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/marschallvon_matern/259146">Matern von Marschall</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">5</td>
+								<td class="n">19 000,00 €</td>
+								<td class="c">4</td><td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/T/tiefensee_wolfgang/259110">Wolfgang Tiefensee</a></td>
@@ -554,12 +572,12 @@
 								<td class="c">12</td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/marschallvon_matern/259146">Matern von Marschall</a></td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/F/faerber_hermann/258338">Hermann Färber</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">2</td>
-								<td class="c">5</td>
-								<td class="n">19 000,00 €</td>
-								<td class="c">4</td><td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td>
+								<td class="c">18</td>
+								<td class="n">18 000,00 €</td>
+								<td class="c">18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/W/wadephul_johann/259168">Dr. Johann Wadephul</a></td>
@@ -572,14 +590,6 @@
 							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/held_marcus/258484">Marcus Held</a></td>
 								<td>SPD</td>
-								<td class="c">2</td>
-								<td class="c">18</td>
-								<td class="n">18 000,00 €</td>
-								<td class="c">18</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/F/faerber_hermann/258338">Hermann Färber</a></td>
-								<td>CDU&#x2F;CSU</td>
 								<td class="c">2</td>
 								<td class="c">18</td>
 								<td class="n">18 000,00 €</td>
@@ -634,8 +644,8 @@
 								<td></td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/strobl_thomas/259082">Thomas Strobl</a></td>
-								<td>CDU&#x2F;CSU</td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hajduk_anja/258516">Anja Hajduk</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
 								<td class="c">1</td>
 								<td class="c">2</td>
 								<td class="n">14 000,00 €</td>
@@ -658,16 +668,16 @@
 								<td></td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hajduk_anja/258516">Anja Hajduk</a></td>
-								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/heidenblut_dirk/258440">Dirk Heidenblut</a></td>
+								<td>SPD</td>
 								<td class="c">1</td>
 								<td class="c">2</td>
 								<td class="n">14 000,00 €</td>
 								<td></td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/heidenblut_dirk/258440">Dirk Heidenblut</a></td>
-								<td>SPD</td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/strobl_thomas/259082">Thomas Strobl</a></td>
+								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
 								<td class="c">2</td>
 								<td class="n">14 000,00 €</td>
@@ -938,7 +948,7 @@
 								<td class="c">9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/steiniger_johannes/259426">Johannes Steiniger</a></td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/selle_johannes/258974">Johannes Selle</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
 								<td class="c">9</td>
@@ -946,7 +956,7 @@
 								<td class="c">9</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/selle_johannes/258974">Johannes Selle</a></td>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/steiniger_johannes/259426">Johannes Steiniger</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
 								<td class="c">9</td>
@@ -1082,6 +1092,14 @@
 								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/J/jung_franz_josef/258540">Dr. Franz Josef Jung</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">2 000,00 €</td>
+								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mueller_bettina/259412">Bettina Müller</a></td>
 								<td>SPD</td>
 								<td class="c">2</td>
@@ -1114,22 +1132,6 @@
 								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/J/jung_franz_josef/258540">Dr. Franz Josef Jung</a></td>
-								<td>CDU&#x2F;CSU</td>
-								<td class="c">1</td>
-								<td class="c">1</td>
-								<td class="n">1 000,00 €</td>
-								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
-								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/lindholz_andrea/258728">Andrea Lindholz</a></td>
-								<td>CDU&#x2F;CSU</td>
-								<td class="c">1</td>
-								<td class="c">1</td>
-								<td class="n">1 000,00 €</td>
-								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-							</tr>
-							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/steineke_sebastian/259058">Sebastian Steineke</a></td>
 								<td>CDU&#x2F;CSU</td>
 								<td class="c">1</td>
@@ -1154,6 +1156,14 @@
 								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/lindholz_andrea/258728">Andrea Lindholz</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
 								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/korte_jan/258602">Jan Korte</a></td>
 								<td>Die Linke</td>
 								<td class="c">1</td>
@@ -1164,7 +1174,7 @@
 						</tbody>
 					</table>
 				</article>
-				<article id="fraktionen">
+				<article class="tab-pane" id="fraktionen">
 					<h2>Fraktionen</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -1173,9 +1183,9 @@
 								<td rowspan="2" class="digit">Mitglieder</td>
 								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
 								<td rowspan="2" class="digit">%</td>
-								<td rowspan="2" class="digit">Gesamtbetrag (Minimum)</td>
-								<td rowspan="2" class="digit">Durchschnitt (Minimum)</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -1196,9 +1206,9 @@
 								<td class="n">311</td>
 								<td class="n">84</td>
 								<td class="n">27.01%</td>
-								<td class="n">4 905 500,00 €</td>
-								<td class="n">15 773,31 €</td>
-								<td class="c">403</td><td class="c">169</td><td class="c">113</td><td class="c">24</td><td class="c">17</td><td class="c">6</td><td class="c">2</td><td class="c">3</td><td></td><td class="c">6</td>
+								<td class="n">4 878 500,00 €</td>
+								<td class="n">15 686,50 €</td>
+								<td class="c">404</td><td class="c">161</td><td class="c">113</td><td class="c">24</td><td class="c">17</td><td class="c">6</td><td class="c">2</td><td class="c">3</td><td></td><td class="c">6</td>
 							</tr>
 							<tr>
 								<td>SPD</td>
@@ -1230,7 +1240,7 @@
 						</tbody>
 					</table>
 				</article>
-				<article id="ausschuesse">
+				<article class="tab-pane" id="ausschuesse">
 					<h2>Ausschüsse</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -1239,9 +1249,9 @@
 								<td rowspan="2" class="digit">Mitglieder</td>
 								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
 								<td rowspan="2" class="digit">%</td>
-								<td rowspan="2" class="digit">Gesamtbetrag (Minimum)</td>
-								<td rowspan="2" class="digit">Durchschnitt (Minimum)</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -1267,15 +1277,6 @@
 								<td class="c">137</td><td class="c">33</td><td class="c">15</td><td></td><td class="c">5</td><td class="c">2</td><td></td><td class="c">1</td><td></td><td class="c">5</td>
 							</tr>
 							<tr>
-								<td>Auswärtiger Ausschuss</td>
-								<td class="n">80</td>
-								<td class="n">20</td>
-								<td class="n">25.00%</td>
-								<td class="n">1 454 000,00 €</td>
-								<td class="n">18 175,00 €</td>
-								<td class="c">80</td><td class="c">108</td><td class="c">23</td><td class="c">13</td><td class="c">3</td><td class="c">2</td><td></td><td class="c">2</td><td></td><td class="c">1</td>
-							</tr>
-							<tr>
 								<td>Unterausschuss &quot;Auswärtige Kultur- und Bildungspolitik&quot;</td>
 								<td class="n">21</td>
 								<td class="n">10</td>
@@ -1285,22 +1286,31 @@
 								<td class="c">40</td><td class="c">10</td><td class="c">9</td><td class="c">10</td><td class="c">7</td><td class="c">5</td><td></td><td class="c">2</td><td></td><td class="c">2</td>
 							</tr>
 							<tr>
+								<td>Auswärtiger Ausschuss</td>
+								<td class="n">80</td>
+								<td class="n">20</td>
+								<td class="n">25.00%</td>
+								<td class="n">1 398 000,00 €</td>
+								<td class="n">17 475,00 €</td>
+								<td class="c">80</td><td class="c">92</td><td class="c">23</td><td class="c">13</td><td class="c">3</td><td class="c">2</td><td></td><td class="c">2</td><td></td><td class="c">1</td>
+							</tr>
+							<tr>
 								<td>Ausschuss für Ernährung und Landwirtschaft</td>
 								<td class="n">74</td>
 								<td class="n">13</td>
 								<td class="n">17.57%</td>
-								<td class="n">1 380 000,00 €</td>
-								<td class="n">18 648,65 €</td>
-								<td class="c">89</td><td class="c">28</td><td class="c">34</td><td class="c">5</td><td class="c">11</td><td class="c">1</td><td></td><td></td><td></td><td class="c">2</td>
+								<td class="n">1 381 000,00 €</td>
+								<td class="n">18 662,16 €</td>
+								<td class="c">90</td><td class="c">28</td><td class="c">34</td><td class="c">5</td><td class="c">11</td><td class="c">1</td><td></td><td></td><td></td><td class="c">2</td>
 							</tr>
 							<tr>
 								<td>Ausschuss für Recht und Verbraucherschutz</td>
 								<td class="n">81</td>
 								<td class="n">22</td>
 								<td class="n">27.16%</td>
-								<td class="n">1 168 500,00 €</td>
-								<td class="n">14 425,93 €</td>
-								<td class="c">111</td><td class="c">15</td><td class="c">10</td><td class="c">5</td><td class="c">2</td><td class="c">2</td><td></td><td class="c">2</td><td></td><td class="c">2</td>
+								<td class="n">1 169 500,00 €</td>
+								<td class="n">14 438,27 €</td>
+								<td class="c">112</td><td class="c">15</td><td class="c">10</td><td class="c">5</td><td class="c">2</td><td class="c">2</td><td></td><td class="c">2</td><td></td><td class="c">2</td>
 							</tr>
 							<tr>
 								<td>Ausschuss für Wirtschaft und Energie</td>
@@ -1415,9 +1425,9 @@
 								<td class="n">55</td>
 								<td class="n">9</td>
 								<td class="n">16.36%</td>
-								<td class="n">264 500,00 €</td>
-								<td class="n">4 809,09 €</td>
-								<td class="c">50</td><td class="c">3</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td></td><td></td><td></td><td></td>
+								<td class="n">265 500,00 €</td>
+								<td class="n">4 827,27 €</td>
+								<td class="c">51</td><td class="c">3</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td class="c">2</td><td></td><td></td><td></td><td></td>
 							</tr>
 							<tr>
 								<td>Unterausschuss &quot;Abrüstung, Rüstungskontrolle und Nichtverbreitung&quot;</td>
@@ -1656,7 +1666,7 @@
 						</tbody>
 					</table>
 				</article>
-				<article id="mandate">
+				<article class="tab-pane" id="laender">
 					<h2>Bundesländer</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -1665,9 +1675,9 @@
 								<td rowspan="2" class="digit">Abgeordnete</td>
 								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
 								<td rowspan="2" class="digit">%</td>
-								<td rowspan="2" class="digit">Gesamtbetrag (Minimum)</td>
-								<td rowspan="2" class="digit">Durchschnitt (Minimum)</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -1697,9 +1707,9 @@
 								<td class="n">138</td>
 								<td class="n">32</td>
 								<td class="n">23.19%</td>
-								<td class="n">1 413 500,00 €</td>
-								<td class="n">10 242,75 €</td>
-								<td class="c">87</td><td class="c">81</td><td class="c">54</td><td class="c">21</td><td class="c">5</td><td></td><td></td><td class="c">2</td><td></td><td></td>
+								<td class="n">1 385 500,00 €</td>
+								<td class="n">10 039,86 €</td>
+								<td class="c">87</td><td class="c">73</td><td class="c">54</td><td class="c">21</td><td class="c">5</td><td></td><td></td><td class="c">2</td><td></td><td></td>
 							</tr>
 							<tr>
 								<td>Niedersachsen</td>
@@ -1733,9 +1743,9 @@
 								<td class="n">45</td>
 								<td class="n">7</td>
 								<td class="n">15.56%</td>
-								<td class="n">237 500,00 €</td>
-								<td class="n">5 277,78 €</td>
-								<td class="c">7</td><td class="c">1</td><td class="c">11</td><td></td><td></td><td></td><td class="c">2</td><td></td><td></td><td></td>
+								<td class="n">238 500,00 €</td>
+								<td class="n">5 300,00 €</td>
+								<td class="c">8</td><td class="c">1</td><td class="c">11</td><td></td><td></td><td></td><td class="c">2</td><td></td><td></td><td></td>
 							</tr>
 							<tr>
 								<td>Rheinland-Pfalz</td>
@@ -1830,7 +1840,55 @@
 						</tbody>
 					</table>
 				</article>
-				<article id="mandate">
+				<article class="tab-pane" id="geschlecht">
+					<h2>Geschlecht</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Geschlecht</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Männer</td>
+								<td class="n">401</td>
+								<td class="n">110</td>
+								<td class="n">27.43%</td>
+								<td class="n">5 444 500,00 €</td>
+								<td class="n">13 577,31 €</td>
+								<td class="c">465</td><td class="c">181</td><td class="c">148</td><td class="c">36</td><td class="c">19</td><td class="c">5</td><td class="c">2</td><td class="c">3</td><td></td><td class="c">6</td>
+							</tr>
+							<tr>
+								<td>Frauen</td>
+								<td class="n">230</td>
+								<td class="n">24</td>
+								<td class="n">10.43%</td>
+								<td class="n">431 500,00 €</td>
+								<td class="n">1 876,09 €</td>
+								<td class="c">134</td><td class="c">5</td><td class="c">20</td><td class="c">4</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="mandate">
 					<h2>Mandate</h2>
 					<table class="table table-striped table-bordered table-condensed table-responsive">
 						<thead>
@@ -1839,9 +1897,9 @@
 								<td rowspan="2" class="digit">Abgeordnete</td>
 								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
 								<td rowspan="2" class="digit">%</td>
-								<td rowspan="2" class="digit">Gesamtbetrag (Minimum)</td>
-								<td rowspan="2" class="digit">Durchschnitt (Minimum)</td>
-								<td colspan="10">Stufen</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
 							</tr>
 							<tr>
 								<td class="c">1</td>
@@ -1862,9 +1920,9 @@
 								<td class="n">298</td>
 								<td class="n">77</td>
 								<td class="n">25.84%</td>
-								<td class="n">4 541 000,00 €</td>
-								<td class="n">15 238,26 €</td>
-								<td class="c">320</td><td class="c">162</td><td class="c">107</td><td class="c">19</td><td class="c">19</td><td class="c">6</td><td class="c">2</td><td class="c">1</td><td></td><td class="c">6</td>
+								<td class="n">4 514 000,00 €</td>
+								<td class="n">15 147,65 €</td>
+								<td class="c">321</td><td class="c">154</td><td class="c">107</td><td class="c">19</td><td class="c">19</td><td class="c">6</td><td class="c">2</td><td class="c">1</td><td></td><td class="c">6</td>
 							</tr>
 							<tr>
 								<td>Über Liste</td>
@@ -1878,18 +1936,37 @@
 						</tbody>
 					</table>
 				</article>
+				<article class="tab-pane" id="erlaeuterungen">
+					<h2>Erläuterungen</h2>
+					<p>Die Angaben wurden aus den <a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/">Abgeordneten-Biografien auf der Webeite des des Deutschen Bundestags</a> automatisiert zusammengestellt. Da die Daten dort nicht in einem konsitenten maschinenlesbaren Format vorliegen können wir Fehler und Irrtümer nicht auschließen.</p>
+					<p>Bei allen Beträgen handelt es sich um den minimalen Betrag, der für die Angabe einer Stufe notwendig ist. Die realen Nebeneinkünfte liegen aller Wahrscheinlichkeit nach höher. Höchstbeträge konnten nicht berücksichtigt werden, da in der höchsten Stufe kein maximaler Betrag festgelegt ist. Einkünfte der Stufe 0 wurden nicht berücksichtigt.</p>
+					<p>Die errechneten Beträge sind die Summe aus einmaligen Einkünften, jährlichen Einkünften für jedes begonnene Kalenderjahr der laufenden Legislatur und monatlichen Einkünften für jeden begonnenen Kalendermonat der laufenden Legislatur, sofern kein Beginn oder Ende angegeben wurde. Kurz zusammengefasst: Mindestens diesen Betrag hat der oder die Abgeordnete seit der Wahl dazuverdient.</p>
+					<p>Erläuterungen zu den veröffentlichungspflichtigen Angaben finden sich <a href="http://www.bundestag.de/bundestag/abgeordnete18/nebentaetigkeit">auf der Webseite des Deutschen Bundestages</a>.</p>
+				</article>
+				<article class="tab-pane" id="daten">
+					<h2>Daten</h2>
+					<p>Die zu Grunde liegenden Daten stehen zum Download zur Verfügung: <a href="data/data.json">JSON</a> oder <a href="data/data.json">TSV</a></p>
+					<p>Der Quelltext der Software wurde unter Public Domain <a href="https://github.com/opendatacity/nebeneinkuenfte">auf GitHub veröffentlicht</a>.</p>
+					<p>Die Daten wurden zuletzt aktualisiert am 28.05.2014 16:13.</p>
+				</article>
+			</div>
+			<div id="footnote">
+				<strong>* Stufen:</strong>
+				<span><strong>1</strong> über 1&#8239;000&#8239;€</span>
+				<span><strong>2</strong> über 3&#8239;500&#8239;€</span>
+				<span><strong>3</strong> über 7&#8239;000&#8239;€</span>
+				<span><strong>4</strong> über 15&#8239;000&#8239;€</span>
+				<span><strong>5</strong> über 30&#8239;000&#8239;€</span>
+				<span><strong>6</strong> über 50&#8239;000&#8239;€</span>
+				<span><strong>7</strong> über 75&#8239;000&#8239;€</span>
+				<span><strong>8</strong> über 100&#8239;000&#8239;€</span>
+				<span><strong>9</strong> über 150&#8239;000&#8239;€</span>
+				<span><strong>10</strong> über 250&#8239;000&#8239;€</span>
 			</div>
 		</div>
-		<div id="explanations">
-			<h2>Erläuterungen</h2>
-			<p>Die Angaben wurden aus den Abgeordneten-Biografien auf der Webeite des des Deutschen Bundestags automatisiert zusammengestellt. Da die Daten dort nicht in einem konsitenten maschinenlesbaren Format vorliegen können wir Fehler und Irrtümer nicht auschließen.</p>
-			<p>Bei allen Beträgen handelt es sich um den minimalen Betrag, der für die Angabe einer Stufe notwendig ist. Die realen Nebeneinkünfte liegen aller Wahrscheinlichkeit nach höher. Höchstbeträge konnten nicht berücksichtigt werden, da in der höchsten Stufe kein maximaler Betrag festgelegt ist.</p>
-			<p>Die errechneten Beträge sind die Summe aus einmaligen Einkünften, jährlichen Einkünften für jedes begonnene Kalenderjahr der laufenden Legislatur und monatlichen Einkünften für jeden begonnenen Kalendermonat der laufenden Legislatur, sofern kein Beginn oder Ende angegeben wurde.</p>
-			<p>Eine Aufschlüsselung nach Geschlecht konnte nicht vorgenommen werden, da diese Angabe den Abgeordneten-Biografien nicht zu entnehmen ist.</p>
-			<p>Stand: 26.05.2014 16:38</p>
-		</div>
-		<footer>
-			<a href="https://opendatacity.de/" rel="follow" title="OpenDataCity">OpenDataCity</a>
+		<footer class="clearfix">
+			<div class="pull-left">Ein Informationsangebot von <a href="https://opendatacity.de/" class="odc" rel="follow" title="OpenDataCity">OpenDataCity</a> und  <a href="https://www.lobbycontrol.de/" class="lobbycontrol" rel="follow" title="LobbyControl – Initiative für Transparenz und Demokratie e.V.">LobbyControl e.V.</a></div>
+			<div class="pull-right">Stand: 28.05.2014 16:13, Lizenz: <a href="http://creativecommons.org/licenses/by/3.0/de/">CC BY 3.0 DE</a></div>
 		</footer>
 	</body>
 </html>
