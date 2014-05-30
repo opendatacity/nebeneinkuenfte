@@ -63,6 +63,7 @@ footer {
 footer a.odc {
 	display: inline-block;
 	background: url("../img/odc.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	background-image: -webkit-image-set(url(../img/odc.png) 1x, url(../img/odc@2x.png) 2x);
 	text-indent: -99999px;
 	width: 70px;
 }
@@ -70,6 +71,7 @@ footer a.odc {
 footer a.lobbycontrol {
 	display: inline-block;
 	background: url("../img/lobbycontrol.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+	background-image: -webkit-image-set(url(../img/lobbycontrol.png) 1x, url(../img/lobbycontrol@2x.png) 2x);
 	text-indent: -99999px;
 	width: 52px;
 }
