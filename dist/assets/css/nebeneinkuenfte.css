@@ -73,3 +73,24 @@ footer a.lobbycontrol {
 	text-indent: -99999px;
 	width: 52px;
 }
+
+#chart svg {
+    width: 100%;
+    height: 400px;
+}
+
+.nvtooltip {
+    position: absolute;
+    z-index: 1020;
+    display: block;
+    padding: 5px;
+    visibility: visible;
+    opacity: 0.9 !important;
+    background-color: #fff;
+    border: solid #444444 1px;
+    border-radius: 2px;
+}
+
+#chart text {
+    font: 10px sans-serif;
+}

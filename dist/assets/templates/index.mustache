@@ -7,11 +7,17 @@
 		<!-- link rel="stylesheet" type="text/css" href="assets/fonts/font.css" -->
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/nv.d3.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/nebeneinkuenfte.css">
 		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="assets/js/d3.min.js"></script>
+		<script type="text/javascript" src="assets/js/nv.d3.min.js"></script>
 		<script type="text/javascript" src="assets/js/nebeneinkuenfte.js"></script>
+        <script type="text/javascript">
+			 var data = {{{data}}};
+        </script>
 		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/html5shiv.min.js"></script><![endif]-->
 		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/respond.min.js"></script><![endif]-->
 	</head>
@@ -28,6 +34,7 @@
 				<li><a href="#mandate" data-toggle="tab">Mandate</a></li>
 				<li><a href="#erlaeuterungen" data-toggle="tab">Erläuterungen</a></li>
 				<li><a href="#daten" data-toggle="tab">Daten</a></li>
+				<li><a href="#graph" data-toggle="tab">Diagramme</a></li>
 			</ul>
 		</header>
 		<div id="main" class="container">
@@ -332,6 +339,11 @@
 					<p>Der Quelltext der Software wurde unter Public Domain <a href="https://github.com/opendatacity/nebeneinkuenfte">auf GitHub veröffentlicht</a>.</p>
 					<p>Die Daten wurden zuletzt aktualisiert am {{date}}.</p>
 				</article>
+                <article class="tab-pane" id="graph">
+                    <h2>Diagramme</h2>
+					<select id="chart-select"></select> nach <select id="chart-data-select"></select>
+                    <div id="chart"></div>
+                </article>
 				<div id="footnote">
 					<strong>* Stufen:</strong>
 					<span><strong>1</strong> über 1&#8239;000&#8239;€</span>
