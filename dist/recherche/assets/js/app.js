@@ -256,6 +256,6 @@ app.filter('startFrom', function () {
 
 app.factory('Values', function ($resource) {
 	'use strict';
-	return $resource('data/nebeneinkuenfte.compact.json', {}, {});
+	return $resource('nebeneinkuenfte.compact.json', {}, {});
 });
 
