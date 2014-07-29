@@ -10,6 +10,7 @@ var moment = require("moment");
 
 /* local modules */
 var generator = require(path.resolve(__dirname, "../lib/generator.js"));
+var compactor = require(path.resolve(__dirname, "../lib/compactjson.js"));  //for recherche app
 
 /* package */
 var pkg = require(path.resolve(__dirname, "../package.json"));
@@ -37,7 +38,9 @@ generator(data, evaluated, template, function(err, html){
 	if (err) console.error("could not generate html", err) && process.exit(1);
 	fs.writeFile(path.resolve(SITE_DIR, "index.html"), html, function(err){
 		if (err) console.error("could not save html", err) && process.exit(2);
-		console.log("html generated");
+		compactor.saveCompact(data, SITE_DIR, function() {
+			console.log("all generated");
+		});
 	});
 });
 

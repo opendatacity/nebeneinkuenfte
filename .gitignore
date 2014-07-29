@@ -1,0 +1,6 @@
+node_modules
+bower_components
+dist/data
+dist/recherche/data
+dist/index.html
+.cache
