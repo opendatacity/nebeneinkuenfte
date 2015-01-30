@@ -1,0 +1,25 @@
+{
+	"name": "nebeneinkuenfteapp",
+	"main": "index.html",
+	"version": "0.0.1",
+	"dependencies": {
+		"bootstrap": "*",
+		"angular": "*",
+		"angular-resource": "*",
+		"angular-sanitize": "*",
+		"ng-csv": "*",
+		"jquery": "*"
+	},
+	"authors": [
+		"ffalt <ffalt@datenfreunde.com>"
+	],
+	"license": "MIT",
+	"private": true,
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
+}

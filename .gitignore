@@ -1,0 +1,6 @@
+node_modules
+bower_components
+dist/data
+dist/index.html
+dist/recherche/nebeneinkuenfte.compact.json
+.cache
