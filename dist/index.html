@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Nebeneinkünfte der Abgeordneten im Deutschen Bundestag</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- link rel="stylesheet" type="text/css" href="assets/fonts/font.css" -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/nv.d3.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/nebeneinkuenfte.css">
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="assets/js/d3.min.js"></script>
+		<script type="text/javascript" src="assets/js/nv.d3.min.js"></script>
+		<script type="text/javascript" src="assets/js/nebeneinkuenfte.js"></script>
+        <script type="text/javascript">
+			 var data = {"date":"2016-10-10T22:01:00.281Z","data":{"gesamt":{"members":652,"earners":72,"items":173,"min":7025000,"ratio_earners_per_member":0.11042944785276074,"ratio_min_per_earner":97569.44444444444,"ratio_min_per_member":10774.539877300613,"ratio_items_per_earner":2.4027777777777777,"ratio_items_per_member":0.26533742331288346,"map":[0,1148,264,174,47,16,6,2,8,2,4],"num":1671},"personen":[{"name":"Agnes Alpers","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katrin Albsteiger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stephan Albani","items":2,"min":166500,"map":[0,37,37,0,0,0,0,0,0,0,0]},{"name":"Peter Altmaier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jan van Aken","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kerstin Andreae","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Luise Amtsberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Niels Annen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heike Baehrens","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ingrid Arndt-Brauer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rainer Arnold","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dorothee Bär","items":1,"min":10500,"map":[0,0,3,0,0,0,0,0,0,0,0]},{"name":"Artur Auernhammer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrike Bahr","items":1,"min":8000,"map":[0,8,0,0,0,0,0,0,0,0,0]},{"name":"Annalena Baerbock","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Katarina Barley","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bettina Bähr-Losse","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heinz-Joachim Barchmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Hans-Peter Bartels","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Doris Barnett","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Bareiß","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Norbert Barthle","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus Barthel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Matthias Bartke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sören Bartol","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Günter Baumann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Dietmar Bartsch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Bätzing-Lichtenthäler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bärbel Bas","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Volker Beck","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Maik Beermann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marieluise Beck","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uwe Beckmeyer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Herbert Behrens","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dirk Becker","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. André Berghegger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sybille Benning","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Christoph Bergner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Manfred Behrens","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ute Bertram","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Veronika Bellmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Beyer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karin Binder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Steffen Bilger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Lothar Binding","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias W. Birkwald","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Burkhard Blienert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Clemens Binninger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Bleser","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heidrun Bluhm","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Maria Böhmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Norbert Brackmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wolfgang Bosbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus Brähmig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Brand","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Reinhard Brandl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Ralf Brauksiepe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Helmut Brandt","items":4,"min":110000,"map":[0,0,0,0,2,1,1,0,0,0,0]},{"name":"Prof. Dr. Helge Braun","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Willi Brase","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Franziska Brantner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heike Brehmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ralph Brinkhaus","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christine Buchholz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Agnieszka Brugger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Karl-Heinz Brunner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. h.c. Edelgard Bulmahn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Eva Bulling-Schröter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marco Bülow","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cajus Caesar","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gitta Connemann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martin Burkert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Lars Castellucci","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jürgen Coße","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Roland Claus","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernhard Daldrup","items":1,"min":115500,"map":[0,0,33,0,0,0,0,0,0,0,0]},{"name":"Sevim Dağdelen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. rer. pol. Daniela De Ridder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Petra Crone","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Diether Dehm","items":1,"min":60000,"map":[0,0,0,0,4,0,0,0,0,0,0]},{"name":"Dr. rer. nat. Karamba Diaby","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Dittmar","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ekin Deligöz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alexander Dobrindt","items":1,"min":21000,"map":[0,0,0,3,0,0,0,0,0,0,0]},{"name":"Alexandra Dinges-Dierig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Dörflinger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martin Dörmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Donth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marie-Luise Dött","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hansjörg Durz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elvira Drobinski-Weiß","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katja Dörner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Iris Eberl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katharina Dröge","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jutta Eckenbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Harald Ebner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sebastian Edathy","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Siegmund Ehrmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. h.c. Gernot Erler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michaela Engelmeier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus Ernst","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Saskia Esken","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hermann Färber","items":2,"min":74000,"map":[0,74,0,0,0,0,0,0,0,0,0]},{"name":"Petra Ernstberger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karin Evers-Meyer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Johannes Fechner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Bernd Fabritius","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uwe Feiler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Fritz Felgentreu","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Thomas Feist","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Enak Ferlemann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Axel E. Fischer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elke Ferner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ingrid Fischbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. rer. nat. Ute Finckh-Krämer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Maria Flachsbarth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Flisek","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Klaus-Peter Flosbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dirk Fischer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Fograscher","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thorsten Frei","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrich Freese","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dagmar Freitag","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Edgar Franke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hans-Joachim Fuchtel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Astrid Freudenstein","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Hans-Peter Friedrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alexander Funk","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Frieser","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Michael Fuchs","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Peter Gauweiler","items":41,"min":1888500,"map":[0,7,7,6,6,5,2,1,1,2,4]},{"name":"Sigmar Gabriel","items":2,"min":59000,"map":[0,31,0,4,0,0,0,0,0,0,0]},{"name":"Ingo Gädechens","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Thomas Gambke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias Gastel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wolfgang Gehrcke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Thomas Gebhart","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kai Gehring","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Gerdes","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alois Gerig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martin Gerster","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cemile Giousouf","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Iris Gleicke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Eberhard Gienger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Angelika Glöckner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Nicole Gohlke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Diana Golze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Josef Göppel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katrin Göring-Eckardt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrike Gottschalck","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hermann Gröhe","items":1,"min":21000,"map":[0,0,0,3,0,0,0,0,0,0,0]},{"name":"Reinhard Grindel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kerstin Griese","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ursula Groden-Kranich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Groneberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Groß","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uli Grötsch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus-Dieter Gröhler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Annette Groth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Grosse-Brömer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Astrid Grotelüschen","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Oliver Grundmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Markus Grübel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Manfred Grund","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Monika Grütters","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Herlind Gundelach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wolfgang Gunkel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Fritz Güntzler","items":3,"min":111000,"map":[0,111,0,0,0,0,0,0,0,0,0]},{"name":"Olav Gutting","items":2,"min":107000,"map":[0,0,0,1,0,0,0,0,1,0,0]},{"name":"Christian Haase","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Gregor Gysi","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bettina Hagedorn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rita Hagl-Kehl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. André Hahn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Metin Hakverdi","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Anja Hajduk","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heike Hänsel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Florian Hahn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Stephan Harbarth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrich Hampel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sebastian Hartmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jürgen Hardt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Hartmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gerda Hasselfeldt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias Hauer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Britta Haßelmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Helmut Heiderich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dirk Heidenblut","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Matthias Heider","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Rosemarie Hein","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Mechthild Heil","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Stefan Heck","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Mark Hauptmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Frank Heinrich","items":1,"min":1000,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Gabriela Heinrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hubertus Heil","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Mark Helfrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marcus Held","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wolfgang Hellmich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uda Heller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rudolf Henke","items":5,"min":472500,"map":[0,0,37,49,0,0,0,0,0,0,0]},{"name":"Jörg Hellmuth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Barbara Hendricks","items":1,"min":21000,"map":[0,0,0,3,0,0,0,0,0,0,0]},{"name":"Michael Hennrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heidtrud Henn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gustav Herzog","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Hintze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Hiller-Ohm","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Priska Hinz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ansgar Heveling","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Petra Hinz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Hirte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Robert Hochbaum","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Hitschler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. iur. Heribert Hirte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alexander Hoffmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Inge Höger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Anton Hofreiter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thorsten Hoffmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Franz-Josef Holzenkamp","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Eva Högl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karl Holmeier","items":1,"min":28000,"map":[0,0,8,0,0,0,0,0,0,0,0]},{"name":"Margaret Horb","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karl-Heinz (Charles M.) Huber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bettina Hornhues","items":1,"min":2000,"map":[0,2,0,0,0,0,0,0,0,0,0]},{"name":"Bärbel Höhn","items":1,"min":28000,"map":[0,0,0,4,0,0,0,0,0,0,0]},{"name":"Dr. Hendrik Hoppenstedt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Anette Hübinger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andrej Hunko","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sigrid Hupach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hubert Hüppe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christina Jantz-Herrmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias Ilgen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Erich Irlstorfer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Reinhold Jost","items":2,"min":18000,"map":[0,4,4,0,0,0,0,0,0,0,0]},{"name":"Ulla Jelpke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sylvia Jörrißen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dieter Janecek","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Jarzombek","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas Jung","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Josip Juratovic","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Xaver Jung","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Frank Junge","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Jurk","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Franz Josef Jung","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bartholomäus Kalb","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Egon Jüttner","items":1,"min":28000,"map":[0,0,0,4,0,0,0,0,0,0,0]},{"name":"Oliver Kaczmarek","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johannes Kahrs","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Steffen Kampeter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christina Kampmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Steffen Kanitz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hans-Werner Kammer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Susanna Karawanskij","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Anja Karliczek","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ralf Kapschack","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kerstin Kassner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alois Karl","items":2,"min":14000,"map":[0,0,0,2,0,0,0,0,0,0,0]},{"name":"Dr. Stefan Kaufmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Katzmarek","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uwe Kekeritz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernhard Kaster","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Volker Kauder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katja Keul","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Roderich Kiesewetter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Georg Kippels","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrich Kelber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katja Kipping","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marina Kermer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sven-Christian Kindler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cansel Kiziltepe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Arno Klare","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Axel Knoerig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Maria Klein-Schmeink","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Lars Klingbeil","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Volkmar Klein","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jürgen Klimke","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Tom Koenigs","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jens Koeppen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Daniela Kolbe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Bärbel Kofler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Birgit Kömpel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Carsten Körber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sylvia Kotting-Uhl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jan Korte","items":1,"min":1000,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Markus Koob","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hartmut Koschyk","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kordula Kovac","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Anette Kramme","items":1,"min":7000,"map":[0,0,0,1,0,0,0,0,0,0,0]},{"name":"Dr. Günter Krings","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Kretschmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jutta Krellmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gunther Krichbaum","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Oliver Krischer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bettina Kudla","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Kühn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rüdiger Kruse","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Hans-Ulrich Krüger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Renate Künast","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Helga Kühn-Mengel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stephan Kühn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Markus Kurth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Roy Kühne","items":1,"min":108500,"map":[0,0,31,0,0,0,0,0,0,0,0]},{"name":"Katrin Kunert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uwe Lagosky","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Günter Lach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christine Lambrecht","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas G. Lämmel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. h.c. Dr. Karl A. Lamers","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katharina Landgraf","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Norbert Lammert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Lange","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrich Lange","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Barbara Lanzinger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Silke Launert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Karl Lauterbach","items":3,"min":9000,"map":[0,2,0,1,0,0,0,0,0,0,0]},{"name":"Monika Lazar","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Paul Lehrieder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Leidig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Katja Leikert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Philipp Lengsfeld","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Caren Lay","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Andreas Lenz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Leutert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Steffi Lemke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Steffen-Claudio Lemme","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Ralph Lenkert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Ursula von der Leyen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Antje Lezius","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stefan Liebich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias Lietz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andrea Lindholz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ingbert Liebing","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Philipp Graf Lerchenfeld","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Tobias Lindner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Carsten Linnemann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Patricia Lips","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wilfried Lorenz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Lösekrug-Möller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Burkhard Lischka","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hiltrud Lotze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Jan-Marco Luczak","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Daniela Ludwig","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Claudia Lücking-Michel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kirsten Lühmann","items":4,"min":132000,"map":[0,37,0,5,4,0,0,0,0,0,0]},{"name":"Dr. Gesine Lötzsch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Nicole Maisch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Lutze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Yvonne Magwas","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Mahlberg","items":3,"min":73000,"map":[0,37,0,3,1,0,0,0,0,0,0]},{"name":"Karin Maag","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Thomas de Maizière","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Caren Marks","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matern von Marschall","items":2,"min":48000,"map":[0,33,0,0,1,0,0,0,0,0,0]},{"name":"Gisela Manderla","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Birgit Malecha-Nissen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hans-Georg von der Marwitz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hilde Mattheis","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katja Mast","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas Mattfeldt","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Reiner Meier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Michael Meister","items":1,"min":1000,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Stephan Mayer","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Peter Meiwald","items":1,"min":60000,"map":[0,0,0,0,4,0,0,0,0,0,0]},{"name":"Birgit Menz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Angela Merkel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Maria Michalk","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jan Metzler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. h. c. Hans Michelbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Mathias Middelberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Irene Mihalic","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Matthias Miersch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus Mindrup","items":1,"min":7000,"map":[0,0,0,1,0,0,0,0,0,0,0]},{"name":"Susanne Mittag","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Philipp Mißfelder","items":3,"min":380000,"map":[0,0,0,0,0,1,1,0,3,0,0]},{"name":"Dietrich Monstadt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cornelia Möhring","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karsten Möring","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marlene Mortler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Niema Movassat","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Volker Mosblech","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elisabeth Motschmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Detlef Müller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Gerd Müller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bettina Müller","items":2,"min":8000,"map":[0,1,0,1,0,0,0,0,0,0,0]},{"name":"Carsten Müller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Beate Müller-Gemmeke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Philipp Murmann","items":2,"min":161000,"map":[0,0,22,12,0,0,0,0,0,0,0]},{"name":"Stefan Müller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Norbert Müller","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michelle Müntefering","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Özcan Mutlu","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andrea Nahles","items":1,"min":21000,"map":[0,0,0,3,0,0,0,0,0,0,0]},{"name":"Dr. Alexander S. Neu","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Rolf Mützenich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Andreas Nick","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Nord","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michaela Noll","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Konstantin von Notz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Omid Nouripour","items":2,"min":7000,"map":[0,0,2,0,0,0,0,0,0,0,0]},{"name":"Dietmar Nietan","items":1,"min":259000,"map":[0,0,0,37,0,0,0,0,0,0,0]},{"name":"Ulli Nissen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Helmut Nowak","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wilfried Oellers","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. iur. Georg Nüßlein","items":4,"min":195500,"map":[0,38,37,4,0,0,0,0,0,0,0]},{"name":"Julia Obermeier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Oppermann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Florian Oßner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Friedrich Ostendorff","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Aydan Özoğuz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Mahmut Özdemir","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Cem Özdemir","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Henning Otte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ingrid Pahlmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Tim Ostermann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Markus Paschke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Martin Pätzold","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Petra Pau","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sylvia Pantel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martin Patzelt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Lisa Paus","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Petry","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulrich Petzold","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Harald Petzold","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jeannine Pflugradt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sibylle Pfeiffer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Joachim Pfeiffer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Poschmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ronald Pofalla","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Eckhard Pols","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Detlev Pilger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Richard Pitterle","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Wilhelm Priesmeier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Brigitte Pothmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Achim Post","items":1,"min":195000,"map":[0,0,0,0,13,0,0,0,0,0,0]},{"name":"Florian Post","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Joachim Poß","items":1,"min":120000,"map":[0,0,0,0,0,4,0,0,0,0,0]},{"name":"Dr. Simone Raatz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Sascha Raabe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Florian Pronold","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Rachel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martin Rabanus","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alexander Radwan","items":5,"min":172000,"map":[0,74,28,0,0,0,0,0,0,0,0]},{"name":"Kerstin Radomski","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Mechthild Rawert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Peter Ramsauer","items":1,"min":42000,"map":[0,0,12,0,0,0,0,0,0,0,0]},{"name":"Eckhardt Rehberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alois Rainer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stefan Rebmann","items":1,"min":5000,"map":[0,5,0,0,0,0,0,0,0,0,0]},{"name":"Katherina Reiche","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gerold Reichenbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Lothar Riebsamen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Carola Reimann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Josef Rief","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martina Renner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Heinz Riesenhuber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Iris Ripsam","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas Rimkus","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sönke Rix","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Petra Rode-Bosse","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kathrin Rösel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Martin Rosemann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"René Röspel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dennis Rohde","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johannes Röring","items":7,"min":176000,"map":[0,0,0,3,2,0,1,1,0,0,0]},{"name":"Dr. Ernst Dieter Rossmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Roth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Norbert Röttgen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Tabea Rößner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Erwin Rüddel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Claudia Roth","items":1,"min":1000,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Corinna Rüffer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Susann Rüthrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernd Rützel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Albert Rupprecht","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sarah Ryglewski","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Annette Sawade","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johann Saathoff","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Manuel Sarrazin","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Anita Schäfer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Hans-Joachim Schabedoth","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Wolfgang Schäuble","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulle Schauws","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Annette Schavan","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elisabeth Scharfenberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Axel Schäfer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas Scheuer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Gerhard Schick","items":1,"min":3500,"map":[0,0,1,0,0,0,0,0,0,0,0]},{"name":"Dr. Nina Scheer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marianne Schieder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Udo Schiefner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jana Schimke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Tankred Schipanski","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karl Schiewerling","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Schlecht","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Dorothee Schlegel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Norbert Schindler","items":12,"min":218000,"map":[0,109,0,7,2,1,0,0,0,0,0]},{"name":"Dagmar Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heiko Schmelzle","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthias Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabriele Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Frithjof Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ulla Schmidt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ronja Schmitt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Patrick Schnieder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elfi Scho-Antwerpes","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Andreas Schockenhoff","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Kristina Schröder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Carsten Schneider","items":1,"min":3500,"map":[0,0,1,0,0,0,0,0,0,0,0]},{"name":"Nadine Schön","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Ole Schröder","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ursula Schulte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Swen Schulz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernhard Schulte-Drüggelte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kordula Schulz-Asche","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Klaus-Peter Schulze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ewald Schurer","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Armin Schuster","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Frank Schwabe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Uwe Schummer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stefan Schwartze","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rita Schwarzelühr-Sutter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andreas Schwarz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christina Schwarzer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Reinhold Sendker","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johannes Selle","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Detlef Seif","items":1,"min":1000,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Patrick Sensburg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernd Siebert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Carsten Sieling","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johannes Singhammer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Silberhorn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Petra Sitte","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jens Spahn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rainer Spiering","items":1,"min":28000,"map":[0,0,0,4,0,0,0,0,0,0,0]},{"name":"Tino Sorge","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Frank Steffel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Svenja Stadler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Norbert Spinrath","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Martina Stamm-Fibich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Carola Stauche","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sonja Steffen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Albert Stegemann","items":2,"min":57000,"map":[0,0,0,1,0,0,1,0,0,0,0]},{"name":"Peer Steinbrück","items":5,"min":217500,"map":[0,0,1,2,0,0,0,0,2,0,0]},{"name":"Dr. Wolfgang Stefinger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Stein","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Erika Steinbach","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christian Freiherr von Stetten","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Johannes Steiniger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kersten Steinke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sebastian Steineke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Frank-Walter Steinmeier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rita Stockhofe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gero Storjohann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dieter Stier","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christoph Strässer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stephan Stracke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Matthäus Strebl","items":1,"min":120000,"map":[0,0,0,0,0,4,0,0,0,0,0]},{"name":"Karin Strenz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Stritzl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Max Straubinger","items":1,"min":100000,"map":[0,0,0,0,0,0,0,0,1,0,0]},{"name":"Dr. Wolfgang Strengmann-Kuhn","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Strobl","items":2,"min":56000,"map":[0,0,0,8,0,0,0,0,0,0,0]},{"name":"Hans-Christian Ströbele","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Lena Strothmann","items":2,"min":97000,"map":[0,37,0,0,4,0,0,0,0,0,0]},{"name":"Kerstin Tack","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Stübgen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Sabine Sütterlin-Waack","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Kirsten Tackmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Claudia Tausend","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Frank Tempel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Michael Thews","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Peter Tauber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Azize Tank","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Harald Terpe","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Karin Thissen","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Franz Thönnes","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Wolfgang Tiefensee","items":3,"min":29000,"map":[0,15,0,2,0,0,0,0,0,0,0]},{"name":"Carsten Träger","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Astrid Timmermann-Fechter","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jürgen Trittin","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Axel Troost","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Hans-Peter Uhl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Antje Tillmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Volker Ullrich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Arnold Vaatz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Markus Tressel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Oswin Veith","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Rüdiger Veit","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Alexander Ulrich","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Thomas Viesehon","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Julia Verlinden","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Volkmar Vogel","items":1,"min":60000,"map":[0,0,0,0,4,0,0,0,0,0,0]},{"name":"Michael Vietz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kathrin Vogler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ute Vogt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sven Volmering","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dirk Vöpel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Christel Voßbeck-Kayser","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Sahra Wagenknecht","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kees de Vries","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Doris Wagner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marco Wanderwitz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Johann Wadephul","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Beate Walter-Rosenheimer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karl-Heinz Wange","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Halina Wawzyniak","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gabi Weber","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Nina Warken","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kai Wegner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. h.c. Albert Weiler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Anja Weisgerber","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marcus Weinberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Harald Weinberg","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Weiss","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Karl-Georg Wellmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Marian Wendt","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Weiß","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Ingo Wellenreuther","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Bernd Westphal","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Waldemar Westermayer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Katrin Werner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kai Whittaker","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Peter Wichtel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dirk Wiese","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heinz Wiese","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Klaus-Peter Willsch","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Annette Widmann-Mauz","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Elisabeth Winkelmeier-Becker","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Andrea Wicklein","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Oliver Wittke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dagmar G. Wöhrl","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Valerie Wilms","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Birgit Wöllert","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Jörn Wunderlich","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Barbara Woltmann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gülistan Yüksel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Waltraud Wolff","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Hubertus Zdebel","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Heinrich Zertik","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Tobias Zech","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Emmi Zeulner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Stefan Zierke","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dagmar Ziegler","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Prof. Dr. Matthias Zimmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Dr. Jens Zimmermann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Gudrun Zollner","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Brigitte Zypries","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Manfred Zöllmer","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Pia Zimmermann","items":0,"min":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Sabine Zimmermann","items":1,"min":37000,"map":[0,37,0,0,0,0,0,0,0,0,0]}],"fraktionen":[{"name":"CDU/CSU","members":319,"earners":39,"items":125,"min":5343000,"ratio_earners_per_member":0.12225705329153605,"ratio_min_per_earner":137000,"ratio_min_per_member":16749.21630094044,"ratio_items_per_earner":3.2051282051282053,"ratio_items_per_member":0.39184952978056425,"map":[0,784,222,106,22,12,6,2,6,2,4]},{"name":"SPD","members":203,"earners":23,"items":37,"min":1410500,"ratio_earners_per_member":0.11330049261083744,"ratio_min_per_earner":61326.086956521736,"ratio_min_per_member":6948.275862068966,"ratio_items_per_earner":1.608695652173913,"ratio_items_per_member":0.18226600985221675,"map":[0,251,39,64,17,4,0,0,2,0,0]},{"name":"Bündnis 90/Die Grünen","members":64,"earners":6,"items":7,"min":136500,"ratio_earners_per_member":0.09375,"ratio_min_per_earner":22750,"ratio_min_per_member":2132.8125,"ratio_items_per_earner":1.1666666666666667,"ratio_items_per_member":0.109375,"map":[0,38,3,4,4,0,0,0,0,0,0]},{"name":"Die Linke","members":66,"earners":4,"items":4,"min":135000,"ratio_earners_per_member":0.06060606060606061,"ratio_min_per_earner":33750,"ratio_min_per_member":2045.4545454545455,"ratio_items_per_earner":1,"ratio_items_per_member":0.06060606060606061,"map":[0,75,0,0,4,0,0,0,0,0,0]}],"mandate":[{"name":"liste","members":353,"earners":39,"items":59,"min":2589000,"ratio_earners_per_member":0.11048158640226628,"ratio_min_per_earner":66384.61538461539,"ratio_min_per_member":7334.2776203966005,"ratio_items_per_earner":1.5128205128205128,"ratio_items_per_member":0.1671388101983003,"map":[0,592,110,66,30,5,1,0,5,0,0],"liste":true},{"name":"direkt","members":299,"earners":33,"items":114,"min":4436000,"ratio_earners_per_member":0.11036789297658862,"ratio_min_per_earner":134424.24242424243,"ratio_min_per_member":14836.120401337792,"ratio_items_per_earner":3.4545454545454546,"ratio_items_per_member":0.38127090301003347,"map":[0,556,154,108,17,11,5,2,3,2,4],"direkt":true}],"ausschuesse":[{"name":"Ausschuss für Gesundheit","members":79,"earners":9,"items":24,"min":1477500,"ratio_earners_per_member":0.11392405063291139,"ratio_min_per_earner":164166.66666666666,"ratio_min_per_member":18702.53164556962,"ratio_items_per_earner":2.6666666666666665,"ratio_items_per_member":0.3037974683544304,"map":[0,123,179,104,0,0,0,0,0,0,0]},{"name":"Finanzausschuss","members":79,"earners":14,"items":35,"min":1105000,"ratio_earners_per_member":0.17721518987341772,"ratio_min_per_earner":78928.57142857143,"ratio_min_per_member":13987.341772151898,"ratio_items_per_earner":2.5,"ratio_items_per_member":0.4430379746835443,"map":[0,370,86,22,2,5,0,0,1,0,0]},{"name":"Ausschuss für Bildung, Forschung und Technikfolgenabschätzung","members":72,"earners":5,"items":11,"min":830000,"ratio_earners_per_member":0.06944444444444445,"ratio_min_per_earner":166000,"ratio_min_per_member":11527.777777777777,"ratio_items_per_earner":2.2,"ratio_items_per_member":0.1527777777777778,"map":[0,39,96,65,0,0,0,0,0,0,0]},{"name":"Ausschuss für Umwelt, Naturschutz, Bau und Reaktorsicherheit","members":77,"earners":12,"items":17,"min":783000,"ratio_earners_per_member":0.15584415584415584,"ratio_min_per_earner":65250,"ratio_min_per_member":10168.83116883117,"ratio_items_per_earner":1.4166666666666667,"ratio_items_per_member":0.22077922077922077,"map":[0,145,70,14,13,0,0,0,1,0,0]},{"name":"Auswärtiger Ausschuss","members":79,"earners":9,"items":14,"min":778000,"ratio_earners_per_member":0.11392405063291139,"ratio_min_per_earner":86444.44444444444,"ratio_min_per_member":9848.101265822785,"ratio_items_per_earner":1.5555555555555556,"ratio_items_per_member":0.17721518987341772,"map":[0,149,42,41,13,0,0,0,0,0,0]},{"name":"Ausschuss für die Angelegenheiten der Europäischen Union","members":74,"earners":12,"items":15,"min":714500,"ratio_earners_per_member":0.16216216216216217,"ratio_min_per_earner":59541.666666666664,"ratio_min_per_member":9655.405405405405,"ratio_items_per_earner":1.25,"ratio_items_per_member":0.20270270270270271,"map":[0,183,1,39,9,4,0,0,0,0,0]},{"name":"Ausschuss für Ernährung und Landwirtschaft","members":74,"earners":7,"items":28,"min":654000,"ratio_earners_per_member":0.0945945945945946,"ratio_min_per_earner":93428.57142857143,"ratio_min_per_member":8837.837837837838,"ratio_items_per_earner":4,"ratio_items_per_member":0.3783783783783784,"map":[0,220,0,22,5,1,2,1,0,0,0]},{"name":"Ausschuss für Verkehr und digitale Infrastruktur","members":87,"earners":6,"items":12,"min":584000,"ratio_earners_per_member":0.06896551724137931,"ratio_min_per_earner":97333.33333333333,"ratio_min_per_member":6712.64367816092,"ratio_items_per_earner":2,"ratio_items_per_member":0.13793103448275862,"map":[0,111,8,10,25,0,0,0,0,0,0]},{"name":"Ausschuss für Wirtschaft und Energie","members":98,"earners":9,"items":13,"min":575500,"ratio_earners_per_member":0.09183673469387756,"ratio_min_per_earner":63944.444444444445,"ratio_min_per_member":5872.448979591837,"ratio_items_per_earner":1.4444444444444444,"ratio_items_per_member":0.1326530612244898,"map":[0,186,69,4,8,0,0,0,0,0,0]},{"name":"Unterausschuss Vereinte Nationen, Internationale Organisationen und Globalisierung","members":20,"earners":5,"items":9,"min":460000,"ratio_earners_per_member":0.25,"ratio_min_per_earner":92000,"ratio_min_per_member":23000,"ratio_items_per_earner":1.8,"ratio_items_per_member":0.45,"map":[0,111,28,8,13,0,0,0,0,0,0]},{"name":"Ausschuss für wirtschaftliche Zusammenarbeit und Entwicklung","members":48,"earners":11,"items":17,"min":424000,"ratio_earners_per_member":0.22916666666666666,"ratio_min_per_earner":38545.454545454544,"ratio_min_per_member":8833.333333333334,"ratio_items_per_earner":1.5454545454545454,"ratio_items_per_member":0.3541666666666667,"map":[0,160,0,7,6,0,1,1,0,0,0]},{"name":"Unterausschuss Kommunales","members":31,"earners":6,"items":11,"min":413000,"ratio_earners_per_member":0.1935483870967742,"ratio_min_per_earner":68833.33333333333,"ratio_min_per_member":13322.58064516129,"ratio_items_per_earner":1.8333333333333333,"ratio_items_per_member":0.3548387096774194,"map":[0,38,74,8,4,0,0,0,0,0,0]},{"name":"Haushaltsausschuss","members":88,"earners":9,"items":12,"min":380000,"ratio_earners_per_member":0.10227272727272728,"ratio_min_per_earner":42222.22222222222,"ratio_min_per_member":4318.181818181818,"ratio_items_per_earner":1.3333333333333333,"ratio_items_per_member":0.13636363636363635,"map":[0,259,2,2,0,0,0,0,1,0,0]},{"name":"Ausschuss für Recht und Verbraucherschutz","members":83,"earners":8,"items":13,"min":374000,"ratio_earners_per_member":0.0963855421686747,"ratio_min_per_earner":46750,"ratio_min_per_member":4506.024096385542,"ratio_items_per_earner":1.625,"ratio_items_per_member":0.1566265060240964,"map":[0,150,0,2,2,1,1,0,1,0,0]},{"name":"Innenausschuss","members":80,"earners":5,"items":11,"min":317000,"ratio_earners_per_member":0.0625,"ratio_min_per_earner":63400,"ratio_min_per_member":3962.5,"ratio_items_per_earner":2.2,"ratio_items_per_member":0.1375,"map":[0,112,0,5,6,1,1,0,0,0,0]},{"name":"Sportausschuss","members":42,"earners":4,"items":6,"min":284500,"ratio_earners_per_member":0.09523809523809523,"ratio_min_per_earner":71125,"ratio_min_per_member":6773.809523809524,"ratio_items_per_earner":1.5,"ratio_items_per_member":0.14285714285714285,"map":[0,148,31,4,0,0,0,0,0,0,0]},{"name":"5. Untersuchungsausschuss","members":22,"earners":2,"items":8,"min":264000,"ratio_earners_per_member":0.09090909090909091,"ratio_min_per_earner":132000,"ratio_min_per_member":12000,"ratio_items_per_earner":4,"ratio_items_per_member":0.36363636363636365,"map":[0,74,0,10,8,0,0,0,0,0,0]},{"name":"Ausschuss für Arbeit und Soziales","members":89,"earners":5,"items":6,"min":256000,"ratio_earners_per_member":0.056179775280898875,"ratio_min_per_earner":51200,"ratio_min_per_member":2876.4044943820227,"ratio_items_per_earner":1.2,"ratio_items_per_member":0.06741573033707865,"map":[0,79,0,1,0,4,1,0,0,0,0]},{"name":"Ausschuss für Tourismus","members":40,"earners":2,"items":5,"min":218500,"ratio_earners_per_member":0.05,"ratio_min_per_earner":109250,"ratio_min_per_member":5462.5,"ratio_items_per_earner":2.5,"ratio_items_per_member":0.125,"map":[0,0,31,0,2,1,1,0,0,0,0]},{"name":"Unterausschuss \"Auswärtige Kultur- und Bildungspolitik\"","members":24,"earners":7,"items":8,"min":217000,"ratio_earners_per_member":0.2916666666666667,"ratio_min_per_earner":31000,"ratio_min_per_member":9041.666666666666,"ratio_items_per_earner":1.1428571428571428,"ratio_items_per_member":0.3333333333333333,"map":[0,2,2,4,12,0,0,0,0,0,0]},{"name":"Ausschuss für Wahlprüfung, Immunität und Geschäftsordnung","members":34,"earners":3,"items":6,"min":211000,"ratio_earners_per_member":0.08823529411764706,"ratio_min_per_earner":70333.33333333333,"ratio_min_per_member":6205.882352941177,"ratio_items_per_earner":2,"ratio_items_per_member":0.17647058823529413,"map":[0,1,0,0,2,1,1,0,1,0,0]},{"name":"Ausschuss für Familie, Senioren, Frauen und Jugend","members":78,"earners":4,"items":6,"min":203000,"ratio_earners_per_member":0.05128205128205128,"ratio_min_per_earner":50750,"ratio_min_per_member":2602.5641025641025,"ratio_items_per_earner":1.5,"ratio_items_per_member":0.07692307692307693,"map":[0,47,0,3,1,4,0,0,0,0,0]},{"name":"Petitionsausschuss","members":58,"earners":4,"items":7,"min":180000,"ratio_earners_per_member":0.06896551724137931,"ratio_min_per_earner":45000,"ratio_min_per_member":3103.448275862069,"ratio_items_per_earner":1.75,"ratio_items_per_member":0.1206896551724138,"map":[0,113,0,1,4,0,0,0,0,0,0]},{"name":"1. Untersuchungsausschuss (\"NSA\")","members":22,"earners":4,"items":5,"min":159000,"ratio_earners_per_member":0.18181818181818182,"ratio_min_per_earner":39750,"ratio_min_per_member":7227.272727272727,"ratio_items_per_earner":1.25,"ratio_items_per_member":0.22727272727272727,"map":[0,144,0,0,1,0,0,0,0,0,0]},{"name":"Wahlausschuss","members":25,"earners":2,"items":5,"min":147000,"ratio_earners_per_member":0.08,"ratio_min_per_earner":73500,"ratio_min_per_member":5880,"ratio_items_per_earner":2.5,"ratio_items_per_member":0.2,"map":[0,37,0,0,2,1,1,0,0,0,0]},{"name":"Der Ältestenrat","members":37,"earners":4,"items":4,"min":139000,"ratio_earners_per_member":0.10810810810810811,"ratio_min_per_earner":34750,"ratio_min_per_member":3756.7567567567567,"ratio_items_per_earner":1,"ratio_items_per_member":0.10810810810810811,"map":[0,39,0,0,0,0,0,0,1,0,0]},{"name":"Unterausschuss Regionale Wirtschaftspolitik und ERP-Wirtschaftspläne","members":20,"earners":4,"items":4,"min":139000,"ratio_earners_per_member":0.2,"ratio_min_per_earner":34750,"ratio_min_per_member":6950,"ratio_items_per_earner":1,"ratio_items_per_member":0.2,"map":[0,111,8,0,0,0,0,0,0,0,0]},{"name":"4. Untersuchungsausschuss","members":22,"earners":3,"items":5,"min":118000,"ratio_earners_per_member":0.13636363636363635,"ratio_min_per_earner":39333.333333333336,"ratio_min_per_member":5363.636363636364,"ratio_items_per_earner":1.6666666666666667,"ratio_items_per_member":0.22727272727272727,"map":[0,111,2,0,0,0,0,0,0,0,0]},{"name":"Unterausschuss zu Fragen der Europäischen Union","members":18,"earners":5,"items":8,"min":116000,"ratio_earners_per_member":0.2777777777777778,"ratio_min_per_earner":23200,"ratio_min_per_member":6444.444444444444,"ratio_items_per_earner":1.6,"ratio_items_per_member":0.4444444444444444,"map":[0,74,0,6,0,0,0,0,0,0,0]},{"name":"Parlamentarisches Finanzmarktgremium","members":10,"earners":2,"items":4,"min":114500,"ratio_earners_per_member":0.2,"ratio_min_per_earner":57250,"ratio_min_per_member":11450,"ratio_items_per_earner":2,"ratio_items_per_member":0.4,"map":[0,111,1,0,0,0,0,0,0,0,0]},{"name":"Parlamentarischer Beirat für nachhaltige Entwicklung","members":40,"earners":3,"items":4,"min":113000,"ratio_earners_per_member":0.075,"ratio_min_per_earner":37666.666666666664,"ratio_min_per_member":2825,"ratio_items_per_earner":1.3333333333333333,"ratio_items_per_member":0.1,"map":[0,38,0,0,5,0,0,0,0,0,0]},{"name":"2. Untersuchungsausschuss","members":22,"earners":1,"items":4,"min":110000,"ratio_earners_per_member":0.045454545454545456,"ratio_min_per_earner":110000,"ratio_min_per_member":5000,"ratio_items_per_earner":4,"ratio_items_per_member":0.18181818181818182,"map":[0,0,0,0,2,1,1,0,0,0,0]},{"name":"Wahlprüfungsausschuss","members":20,"earners":1,"items":1,"min":100000,"ratio_earners_per_member":0.05,"ratio_min_per_earner":100000,"ratio_min_per_member":5000,"ratio_items_per_earner":1,"ratio_items_per_member":0.05,"map":[0,0,0,0,0,0,0,0,1,0,0]},{"name":"Ausschuss für Kultur und Medien","members":42,"earners":2,"items":2,"min":97000,"ratio_earners_per_member":0.047619047619047616,"ratio_min_per_earner":48500,"ratio_min_per_member":2309.5238095238096,"ratio_items_per_earner":1,"ratio_items_per_member":0.047619047619047616,"map":[0,37,0,0,4,0,0,0,0,0,0]},{"name":"Unterausschuss Europarecht","members":21,"earners":3,"items":3,"min":75000,"ratio_earners_per_member":0.14285714285714285,"ratio_min_per_earner":25000,"ratio_min_per_member":3571.4285714285716,"ratio_items_per_earner":1,"ratio_items_per_member":0.14285714285714285,"map":[0,75,0,0,0,0,0,0,0,0,0]},{"name":"Rechnungsprüfungsausschuss","members":23,"earners":2,"items":2,"min":74000,"ratio_earners_per_member":0.08695652173913043,"ratio_min_per_earner":37000,"ratio_min_per_member":3217.391304347826,"ratio_items_per_earner":1,"ratio_items_per_member":0.08695652173913043,"map":[0,74,0,0,0,0,0,0,0,0,0]},{"name":"Gremium nach Artikel 13 Absatz 6 des Grundgesetzes","members":10,"earners":2,"items":2,"min":74000,"ratio_earners_per_member":0.2,"ratio_min_per_earner":37000,"ratio_min_per_member":7400,"ratio_items_per_earner":1,"ratio_items_per_member":0.2,"map":[0,74,0,0,0,0,0,0,0,0,0]},{"name":"Unterausschuss für Zivile Krisenprävention, Konfliktbearbeitung und vernetztes Handeln","members":23,"earners":3,"items":3,"min":70000,"ratio_earners_per_member":0.13043478260869565,"ratio_min_per_earner":23333.333333333332,"ratio_min_per_member":3043.478260869565,"ratio_items_per_earner":1,"ratio_items_per_member":0.13043478260869565,"map":[0,42,0,4,0,0,0,0,0,0,0]},{"name":"Verteidigungsausschuss","members":70,"earners":2,"items":3,"min":44000,"ratio_earners_per_member":0.02857142857142857,"ratio_min_per_earner":22000,"ratio_min_per_member":628.5714285714286,"ratio_items_per_earner":1.5,"ratio_items_per_member":0.04285714285714286,"map":[0,37,2,0,0,0,0,0,0,0,0]},{"name":"Ausschuss Digitale Agenda","members":38,"earners":3,"items":3,"min":40000,"ratio_earners_per_member":0.07894736842105263,"ratio_min_per_earner":13333.333333333334,"ratio_min_per_member":1052.6315789473683,"ratio_items_per_earner":1,"ratio_items_per_member":0.07894736842105263,"map":[0,40,0,0,0,0,0,0,0,0,0]},{"name":"Ausschuss für Menschenrechte und humanitäre Hilfe","members":37,"earners":4,"items":5,"min":37000,"ratio_earners_per_member":0.10810810810810811,"ratio_min_per_earner":9250,"ratio_min_per_member":1000,"ratio_items_per_earner":1.25,"ratio_items_per_member":0.13513513513513514,"map":[0,2,2,4,0,0,0,0,0,0,0]},{"name":"Parlamentarisches Kontrollgremium (PKGr)","members":11,"earners":1,"items":1,"min":37000,"ratio_earners_per_member":0.09090909090909091,"ratio_min_per_earner":37000,"ratio_min_per_member":3363.6363636363635,"ratio_items_per_earner":1,"ratio_items_per_member":0.09090909090909091,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Schriftführer/in","members":64,"earners":2,"items":4,"min":15000,"ratio_earners_per_member":0.03125,"ratio_min_per_earner":7500,"ratio_min_per_member":234.375,"ratio_items_per_earner":2,"ratio_items_per_member":0.0625,"map":[0,1,2,1,0,0,0,0,0,0,0]},{"name":"Unterausschuss \"Bürgerschaftliches Engagement\"","members":32,"earners":1,"items":1,"min":8000,"ratio_earners_per_member":0.03125,"ratio_min_per_earner":8000,"ratio_min_per_member":250,"ratio_items_per_earner":1,"ratio_items_per_member":0.03125,"map":[0,8,0,0,0,0,0,0,0,0,0]},{"name":"Kinderkommission - Kommission zur Wahrnehmung der Belange der Kinder","members":9,"earners":1,"items":1,"min":8000,"ratio_earners_per_member":0.1111111111111111,"ratio_min_per_earner":8000,"ratio_min_per_member":888.8888888888889,"ratio_items_per_earner":1,"ratio_items_per_member":0.1111111111111111,"map":[0,8,0,0,0,0,0,0,0,0,0]},{"name":"Gremium nach § 23c Absatz 8 des Zollfahndungsdienstgesetzes","members":10,"earners":2,"items":2,"min":2000,"ratio_earners_per_member":0.2,"ratio_min_per_earner":1000,"ratio_min_per_member":200,"ratio_items_per_earner":1,"ratio_items_per_member":0.2,"map":[0,2,0,0,0,0,0,0,0,0,0]},{"name":"3. Untersuchungsausschuss","members":21,"earners":0,"items":0,"min":0,"ratio_earners_per_member":0,"ratio_min_per_earner":null,"ratio_min_per_member":0,"ratio_items_per_earner":null,"ratio_items_per_member":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Kuratorium der Bundeszentrale für politische Bildung","members":24,"earners":0,"items":0,"min":0,"ratio_earners_per_member":0,"ratio_min_per_earner":null,"ratio_min_per_member":0,"ratio_items_per_earner":null,"ratio_items_per_member":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Unterausschuss \"Abrüstung, Rüstungskontrolle und Nichtverbreitung\"","members":24,"earners":0,"items":0,"min":0,"ratio_earners_per_member":0,"ratio_min_per_earner":null,"ratio_min_per_member":0,"ratio_items_per_earner":null,"ratio_items_per_member":0,"map":[0,0,0,0,0,0,0,0,0,0,0]}],"laender":[{"name":"Bayern","members":92,"earners":16,"items":64,"min":2718500,"ratio_earners_per_member":0.17391304347826086,"ratio_min_per_earner":169906.25,"ratio_min_per_member":29548.91304347826,"ratio_items_per_earner":4,"ratio_items_per_member":0.6956521739130435,"map":[0,239,95,16,6,9,2,1,2,2,4]},{"name":"Nordrhein-Westfalen","members":145,"earners":16,"items":40,"min":2295500,"ratio_earners_per_member":0.1103448275862069,"ratio_min_per_earner":143468.75,"ratio_min_per_member":15831.034482758621,"ratio_items_per_earner":2.5,"ratio_items_per_member":0.27586206896551724,"map":[0,77,71,105,22,6,3,1,5,0,0]},{"name":"Niedersachsen","members":68,"earners":11,"items":19,"min":856000,"ratio_earners_per_member":0.16176470588235295,"ratio_min_per_earner":77818.18181818182,"ratio_min_per_member":12588.235294117647,"ratio_items_per_earner":1.7272727272727273,"ratio_items_per_member":0.27941176470588236,"map":[0,290,68,14,12,0,1,0,0,0,0]},{"name":"Baden-Württemberg","members":81,"earners":8,"items":12,"min":358500,"ratio_earners_per_member":0.09876543209876543,"ratio_min_per_earner":44812.5,"ratio_min_per_member":4425.925925925926,"ratio_items_per_earner":1.5,"ratio_items_per_member":0.14814814814814814,"map":[0,149,1,13,1,0,0,0,1,0,0]},{"name":"Rheinland-Pfalz","members":32,"earners":4,"items":15,"min":313000,"ratio_earners_per_member":0.125,"ratio_min_per_earner":78250,"ratio_min_per_member":9781.25,"ratio_items_per_earner":3.75,"ratio_items_per_member":0.46875,"map":[0,183,0,10,2,1,0,0,0,0,0]},{"name":"Schleswig-Holstein","members":25,"earners":1,"items":2,"min":161000,"ratio_earners_per_member":0.04,"ratio_min_per_earner":161000,"ratio_min_per_member":6440,"ratio_items_per_earner":2,"ratio_items_per_member":0.08,"map":[0,0,22,12,0,0,0,0,0,0,0]},{"name":"Thüringen","members":18,"earners":4,"items":4,"min":137500,"ratio_earners_per_member":0.2222222222222222,"ratio_min_per_earner":34375,"ratio_min_per_member":7638.888888888889,"ratio_items_per_earner":1,"ratio_items_per_member":0.2222222222222222,"map":[0,74,1,0,4,0,0,0,0,0,0]},{"name":"Sachsen","members":34,"earners":3,"items":5,"min":67000,"ratio_earners_per_member":0.08823529411764706,"ratio_min_per_earner":22333.333333333332,"ratio_min_per_member":1970.5882352941176,"ratio_items_per_earner":1.6666666666666667,"ratio_items_per_member":0.14705882352941177,"map":[0,53,0,2,0,0,0,0,0,0,0]},{"name":"Berlin","members":27,"earners":2,"items":2,"min":44000,"ratio_earners_per_member":0.07407407407407407,"ratio_min_per_earner":22000,"ratio_min_per_member":1629.6296296296296,"ratio_items_per_earner":1,"ratio_items_per_member":0.07407407407407407,"map":[0,37,0,1,0,0,0,0,0,0,0]},{"name":"Hamburg","members":13,"earners":1,"items":1,"min":37000,"ratio_earners_per_member":0.07692307692307693,"ratio_min_per_earner":37000,"ratio_min_per_member":2846.153846153846,"ratio_items_per_earner":1,"ratio_items_per_member":0.07692307692307693,"map":[0,37,0,0,0,0,0,0,0,0,0]},{"name":"Saarland","members":10,"earners":1,"items":2,"min":18000,"ratio_earners_per_member":0.1,"ratio_min_per_earner":18000,"ratio_min_per_member":1800,"ratio_items_per_earner":2,"ratio_items_per_member":0.2,"map":[0,4,4,0,0,0,0,0,0,0,0]},{"name":"Hessen","members":46,"earners":3,"items":5,"min":16000,"ratio_earners_per_member":0.06521739130434782,"ratio_min_per_earner":5333.333333333333,"ratio_min_per_member":347.82608695652175,"ratio_items_per_earner":1.6666666666666667,"ratio_items_per_member":0.10869565217391304,"map":[0,2,2,1,0,0,0,0,0,0,0]},{"name":"Bremen","members":8,"earners":1,"items":1,"min":2000,"ratio_earners_per_member":0.125,"ratio_min_per_earner":2000,"ratio_min_per_member":250,"ratio_items_per_earner":1,"ratio_items_per_member":0.125,"map":[0,2,0,0,0,0,0,0,0,0,0]},{"name":"Sachsen-Anhalt","members":19,"earners":1,"items":1,"min":1000,"ratio_earners_per_member":0.05263157894736842,"ratio_min_per_earner":1000,"ratio_min_per_member":52.63157894736842,"ratio_items_per_earner":1,"ratio_items_per_member":0.05263157894736842,"map":[0,1,0,0,0,0,0,0,0,0,0]},{"name":"Mecklenburg-Vorpommern","members":13,"earners":0,"items":0,"min":0,"ratio_earners_per_member":0,"ratio_min_per_earner":null,"ratio_min_per_member":0,"ratio_items_per_earner":null,"ratio_items_per_member":0,"map":[0,0,0,0,0,0,0,0,0,0,0]},{"name":"Brandenburg","members":21,"earners":0,"items":0,"min":0,"ratio_earners_per_member":0,"ratio_min_per_earner":null,"ratio_min_per_member":0,"ratio_items_per_earner":null,"ratio_items_per_member":0,"map":[0,0,0,0,0,0,0,0,0,0,0]}],"gender":[{"type":"f","members":231,"earners":13,"items":18,"min":445500,"ratio_earners_per_member":0.05627705627705628,"ratio_min_per_earner":34269.230769230766,"ratio_min_per_member":1928.5714285714287,"ratio_items_per_earner":1.3846153846153846,"ratio_items_per_member":0.07792207792207792,"map":[0,196,3,17,8,0,0,0,0,0,0],"f":true},{"type":"m","members":421,"earners":59,"items":155,"min":6579500,"ratio_earners_per_member":0.14014251781472684,"ratio_min_per_earner":111516.94915254238,"ratio_min_per_member":15628.266033254156,"ratio_items_per_earner":2.6271186440677967,"ratio_items_per_member":0.3681710213776722,"map":[0,952,261,157,39,16,6,2,8,2,4],"m":true}]}};
+        </script>
+		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/html5shiv.min.js"></script><![endif]-->
+		<!--[if lt IE 9]><script type="text/javascript" src="assets/js/respond.min.js"></script><![endif]-->
+	</head>
+	<body>
+		<header>
+			<h1>Nebeneinkünfte <small>der Abgeordneten im Deutschen Bundestag</small></h1>
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#gesamt" data-toggle="tab">Gesamt</a></li>
+				<li><a href="#abgeordnete" data-toggle="tab">Abgeordnete</a></li>
+				<li><a href="#fraktionen" data-toggle="tab">Fraktionen</a></li>
+				<li><a href="#ausschuesse" data-toggle="tab">Ausschüsse</a></li>
+				<li><a href="#laender" data-toggle="tab">Bundesländer</a></li>
+				<li><a href="#geschlecht" data-toggle="tab">Geschlecht</a></li>
+				<li><a href="#mandate" data-toggle="tab">Mandate</a></li>
+				<li><a href="#erlaeuterungen" data-toggle="tab">Erläuterungen</a></li>
+				<li><a href="#daten" data-toggle="tab">Daten</a></li>
+				<li><a href="#graph" data-toggle="tab">Diagramme</a></li>
+			</ul>
+		</header>
+		<div id="main" class="container">
+			<div id="content" class="tab-content">
+				<article class="tab-pane active" id="gesamt">
+					<h2>Gesamter Bundestag</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="digit">Angaben</td>
+								<td rowspan="2" class="digit">Einkünfte</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="n">652</td>
+								<td class="n">72</td>
+								<td class="n">11.04%</td>
+								<td class="c">173</td>
+								<td class="c">1671</td>
+								<td class="n">7 025 000,00 €</td>
+								<td class="n">10 774,54 €</td>
+								<td class="c">1148</td><td class="c">264</td><td class="c">174</td><td class="c">47</td><td class="c">16</td><td class="c">6</td><td class="c">2</td><td class="c">8</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="abgeordnete">
+					<h2>Abgeordnete</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Name</td>
+								<td rowspan="2">Fraktion</td>
+								<td rowspan="2" class="digit">Angaben</td>
+								<td rowspan="2" class="digit">Einkünfte</td>
+								<td rowspan="2" class="currency">Mindesthöhe der Einkünfte</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/gauweiler_peter/258396">Dr. Peter Gauweiler</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">41</td>
+								<td class="c">41</td>
+								<td class="n">1 888 500,00 €</td>
+								<td class="c">7</td><td class="c">7</td><td class="c">6</td><td class="c">6</td><td class="c">5</td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/henke_rudolf/258504">Rudolf Henke</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">5</td>
+								<td class="c">86</td>
+								<td class="n">472 500,00 €</td>
+								<td></td><td class="c">37</td><td class="c">49</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/missfelder_philipp/258790">Philipp Mißfelder</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">3</td>
+								<td class="c">5</td>
+								<td class="n">380 000,00 €</td>
+								<td></td><td></td><td></td><td></td><td class="c">1</td><td class="c">1</td><td></td><td class="c">3</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nietan_dietmar/258808">Dietmar Nietan</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">259 000,00 €</td>
+								<td></td><td></td><td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/schindler_norbert/259032">Norbert Schindler</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">12</td>
+								<td class="c">119</td>
+								<td class="n">218 000,00 €</td>
+								<td class="c">109</td><td></td><td class="c">7</td><td class="c">2</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/steinbrueck_peer/259022">Peer Steinbrück</a></td>
+								<td>SPD</td>
+								<td class="c">5</td>
+								<td class="c">5</td>
+								<td class="n">217 500,00 €</td>
+								<td></td><td class="c">1</td><td class="c">2</td><td></td><td></td><td></td><td></td><td class="c">2</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nuesslein_georg/258802">Dr. iur. Georg Nüßlein</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">4</td>
+								<td class="c">79</td>
+								<td class="n">195 500,00 €</td>
+								<td class="c">38</td><td class="c">37</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/P/post_achim/258858">Achim Post</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">13</td>
+								<td class="n">195 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">13</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/roering_johannes/258888">Johannes Röring</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">7</td>
+								<td class="c">7</td>
+								<td class="n">176 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td class="c">2</td><td></td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/radwan_alexander/258908">Alexander Radwan</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">5</td>
+								<td class="c">102</td>
+								<td class="n">172 000,00 €</td>
+								<td class="c">74</td><td class="c">28</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/A/albani_stephan/258132">Stephan Albani</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">74</td>
+								<td class="n">166 500,00 €</td>
+								<td class="c">37</td><td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/murmann_philipp/258792">Dr. Philipp Murmann</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">34</td>
+								<td class="n">161 000,00 €</td>
+								<td></td><td class="c">22</td><td class="c">12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/luehmann_kirsten/258706">Kirsten Lühmann</a></td>
+								<td>SPD</td>
+								<td class="c">4</td>
+								<td class="c">46</td>
+								<td class="n">132 000,00 €</td>
+								<td class="c">37</td><td></td><td class="c">5</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/strebl_matthaeus/259066">Matthäus Strebl</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">120 000,00 €</td>
+								<td></td><td></td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/P/poss_joachim/258866">Joachim Poß</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">120 000,00 €</td>
+								<td></td><td></td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/D/daldrup_bernhard/258262">Bernhard Daldrup</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">33</td>
+								<td class="n">115 500,00 €</td>
+								<td></td><td class="c">33</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/guentzler_fritz/258392">Fritz Güntzler</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">3</td>
+								<td class="c">111</td>
+								<td class="n">111 000,00 €</td>
+								<td class="c">111</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/B/brandt_helmut/258214">Helmut Brandt</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">4</td>
+								<td class="c">4</td>
+								<td class="n">110 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/kuehne_roy/259432">Dr. Roy Kühne</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">31</td>
+								<td class="n">108 500,00 €</td>
+								<td></td><td class="c">31</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/gutting_olav/258380">Olav Gutting</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">107 000,00 €</td>
+								<td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/straubinger_max/259046">Max Straubinger</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">100 000,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/strothmann_lena/259008">Lena Strothmann</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">41</td>
+								<td class="n">97 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/F/faerber_hermann/258338">Hermann Färber</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">74</td>
+								<td class="n">74 000,00 €</td>
+								<td class="c">74</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mahlberg_thomas/259338">Thomas Mahlberg</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">3</td>
+								<td class="c">41</td>
+								<td class="n">73 000,00 €</td>
+								<td class="c">37</td><td></td><td class="c">3</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/meiwald_peter/258784">Peter Meiwald</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">60 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/V/vogel_volkmar/259158">Volkmar Vogel</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">60 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/D/dehm_diether/258296">Dr. Diether Dehm</a></td>
+								<td>Die Linke</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">60 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/gabriel_sigmar/258398">Sigmar Gabriel</a></td>
+								<td>SPD</td>
+								<td class="c">2</td>
+								<td class="c">35</td>
+								<td class="n">59 000,00 €</td>
+								<td class="c">31</td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/stegemann_albert/259098">Albert Stegemann</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">57 000,00 €</td>
+								<td></td><td></td><td class="c">1</td><td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/strobl_thomas/259082">Thomas Strobl</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">8</td>
+								<td class="n">56 000,00 €</td>
+								<td></td><td></td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/marschallvon_matern/259146">Matern von Marschall</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">34</td>
+								<td class="n">48 000,00 €</td>
+								<td class="c">33</td><td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/ramsauer_peter/258902">Dr. Peter Ramsauer</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">12</td>
+								<td class="n">42 000,00 €</td>
+								<td></td><td class="c">12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/selle_johannes/258974">Johannes Selle</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/schurer_ewald/259070">Ewald Schurer</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mattfeldt_andreas/258750">Andreas Mattfeldt</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/klimke_juergen/258652">Jürgen Klimke</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/grotelueschen_astrid/258422">Astrid Grotelüschen</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/F/flisek_christian/258360">Christian Flisek</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/W/weber_gabriele/259162">Gabi Weber</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/Z/zimmermann_sabine/259228">Sabine Zimmermann</a></td>
+								<td>Die Linke</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/O/oezdemir_cem/258834">Cem Özdemir</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/lemme_steffen/258696">Steffen-Claudio Lemme</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/luczak_jan_marco/258702">Dr. Jan-Marco Luczak</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/U/ulrich_alexander/259132">Alexander Ulrich</a></td>
+								<td>Die Linke</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mayer_stephan/258778">Stephan Mayer</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">37</td>
+								<td class="n">37 000,00 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/T/tiefensee_wolfgang/259110">Wolfgang Tiefensee</a></td>
+								<td>SPD</td>
+								<td class="c">3</td>
+								<td class="c">17</td>
+								<td class="n">29 000,00 €</td>
+								<td class="c">15</td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/J/juettner_egon/258548">Dr. Egon Jüttner</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">28 000,00 €</td>
+								<td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/holmeier_karl/258454">Karl Holmeier</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">8</td>
+								<td class="n">28 000,00 €</td>
+								<td></td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hoehn_baerbel/258514">Bärbel Höhn</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">28 000,00 €</td>
+								<td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/spiering_rainer/259074">Rainer Spiering</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">4</td>
+								<td class="n">28 000,00 €</td>
+								<td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/D/dobrindt_alexander/258284">Alexander Dobrindt</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/G/groehe_hermann/258434">Hermann Gröhe</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hendricks_barbara/258464">Dr. Barbara Hendricks</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nahles_andrea/258818">Andrea Nahles</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">21 000,00 €</td>
+								<td></td><td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/J/jost_reinhold/258534">Reinhold Jost</a></td>
+								<td>SPD</td>
+								<td class="c">2</td>
+								<td class="c">8</td>
+								<td class="n">18 000,00 €</td>
+								<td class="c">4</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/karl_alois/258604">Alois Karl</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">14 000,00 €</td>
+								<td></td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/B/baer_dorothee/258192">Dorothee Bär</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">3</td>
+								<td class="n">10 500,00 €</td>
+								<td></td><td class="c">3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/L/lauterbach_karl/258708">Dr. Karl Lauterbach</a></td>
+								<td>SPD</td>
+								<td class="c">3</td>
+								<td class="c">3</td>
+								<td class="n">9 000,00 €</td>
+								<td class="c">2</td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/B/bahr_ulrike/258242">Ulrike Bahr</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">8</td>
+								<td class="n">8 000,00 €</td>
+								<td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mueller_bettina/259412">Bettina Müller</a></td>
+								<td>SPD</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">8 000,00 €</td>
+								<td class="c">1</td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/N/nouripour_omid/258804">Omid Nouripour</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">2</td>
+								<td class="c">2</td>
+								<td class="n">7 000,00 €</td>
+								<td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/kramme_anette/258582">Anette Kramme</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">7 000,00 €</td>
+								<td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/mindrup_klaus/259346">Klaus Mindrup</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">7 000,00 €</td>
+								<td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/rebmann_stefan/258874">Stefan Rebmann</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">5</td>
+								<td class="n">5 000,00 €</td>
+								<td class="c">5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/schneider_carsten/259094">Carsten Schneider</a></td>
+								<td>SPD</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">3 500,00 €</td>
+								<td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/schick_gerhard/259076">Dr. Gerhard Schick</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">3 500,00 €</td>
+								<td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/hornhues_bettina/259440">Bettina Hornhues</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="n">2 000,00 €</td>
+								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/S/seif_detlef/258948">Detlef Seif</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/H/heinrich_frank/258432">Frank Heinrich</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/R/roth_claudia/258898">Claudia Roth</a></td>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/K/korte_jan/258602">Jan Korte</a></td>
+								<td>Die Linke</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td><a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/M/meister_michael/258786">Dr. Michael Meister</a></td>
+								<td>CDU&#x2F;CSU</td>
+								<td class="c">1</td>
+								<td class="c">1</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="fraktionen">
+					<h2>Fraktionen</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Fraktion</td>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>CDU&#x2F;CSU</td>
+								<td class="n">319</td>
+								<td class="n">39</td>
+								<td class="n">12.23%</td>
+								<td class="n">5 343 000,00 €</td>
+								<td class="n">16 749,22 €</td>
+								<td class="c">784</td><td class="c">222</td><td class="c">106</td><td class="c">22</td><td class="c">12</td><td class="c">6</td><td class="c">2</td><td class="c">6</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+							<tr>
+								<td>SPD</td>
+								<td class="n">203</td>
+								<td class="n">23</td>
+								<td class="n">11.33%</td>
+								<td class="n">1 410 500,00 €</td>
+								<td class="n">6 948,28 €</td>
+								<td class="c">251</td><td class="c">39</td><td class="c">64</td><td class="c">17</td><td class="c">4</td><td></td><td></td><td class="c">2</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Bündnis 90&#x2F;Die Grünen</td>
+								<td class="n">64</td>
+								<td class="n">6</td>
+								<td class="n">9.38%</td>
+								<td class="n">136 500,00 €</td>
+								<td class="n">2 132,81 €</td>
+								<td class="c">38</td><td class="c">3</td><td class="c">4</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Die Linke</td>
+								<td class="n">66</td>
+								<td class="n">4</td>
+								<td class="n">6.06%</td>
+								<td class="n">135 000,00 €</td>
+								<td class="n">2 045,45 €</td>
+								<td class="c">75</td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="ausschuesse">
+					<h2>Ausschüsse</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Ausschuss</td>
+								<td rowspan="2" class="digit">Mitglieder</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Ausschuss für Gesundheit</td>
+								<td class="n">79</td>
+								<td class="n">9</td>
+								<td class="n">11.39%</td>
+								<td class="n">1 477 500,00 €</td>
+								<td class="n">18 702,53 €</td>
+								<td class="c">123</td><td class="c">179</td><td class="c">104</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Finanzausschuss</td>
+								<td class="n">79</td>
+								<td class="n">14</td>
+								<td class="n">17.72%</td>
+								<td class="n">1 105 000,00 €</td>
+								<td class="n">13 987,34 €</td>
+								<td class="c">370</td><td class="c">86</td><td class="c">22</td><td class="c">2</td><td class="c">5</td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Bildung, Forschung und Technikfolgenabschätzung</td>
+								<td class="n">72</td>
+								<td class="n">5</td>
+								<td class="n">6.94%</td>
+								<td class="n">830 000,00 €</td>
+								<td class="n">11 527,78 €</td>
+								<td class="c">39</td><td class="c">96</td><td class="c">65</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Umwelt, Naturschutz, Bau und Reaktorsicherheit</td>
+								<td class="n">77</td>
+								<td class="n">12</td>
+								<td class="n">15.58%</td>
+								<td class="n">783 000,00 €</td>
+								<td class="n">10 168,83 €</td>
+								<td class="c">145</td><td class="c">70</td><td class="c">14</td><td class="c">13</td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Auswärtiger Ausschuss</td>
+								<td class="n">79</td>
+								<td class="n">9</td>
+								<td class="n">11.39%</td>
+								<td class="n">778 000,00 €</td>
+								<td class="n">9 848,10 €</td>
+								<td class="c">149</td><td class="c">42</td><td class="c">41</td><td class="c">13</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für die Angelegenheiten der Europäischen Union</td>
+								<td class="n">74</td>
+								<td class="n">12</td>
+								<td class="n">16.22%</td>
+								<td class="n">714 500,00 €</td>
+								<td class="n">9 655,41 €</td>
+								<td class="c">183</td><td class="c">1</td><td class="c">39</td><td class="c">9</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Ernährung und Landwirtschaft</td>
+								<td class="n">74</td>
+								<td class="n">7</td>
+								<td class="n">9.46%</td>
+								<td class="n">654 000,00 €</td>
+								<td class="n">8 837,84 €</td>
+								<td class="c">220</td><td></td><td class="c">22</td><td class="c">5</td><td class="c">1</td><td class="c">2</td><td class="c">1</td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Verkehr und digitale Infrastruktur</td>
+								<td class="n">87</td>
+								<td class="n">6</td>
+								<td class="n">6.90%</td>
+								<td class="n">584 000,00 €</td>
+								<td class="n">6 712,64 €</td>
+								<td class="c">111</td><td class="c">8</td><td class="c">10</td><td class="c">25</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Wirtschaft und Energie</td>
+								<td class="n">98</td>
+								<td class="n">9</td>
+								<td class="n">9.18%</td>
+								<td class="n">575 500,00 €</td>
+								<td class="n">5 872,45 €</td>
+								<td class="c">186</td><td class="c">69</td><td class="c">4</td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss Vereinte Nationen, Internationale Organisationen und Globalisierung</td>
+								<td class="n">20</td>
+								<td class="n">5</td>
+								<td class="n">25.00%</td>
+								<td class="n">460 000,00 €</td>
+								<td class="n">23 000,00 €</td>
+								<td class="c">111</td><td class="c">28</td><td class="c">8</td><td class="c">13</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für wirtschaftliche Zusammenarbeit und Entwicklung</td>
+								<td class="n">48</td>
+								<td class="n">11</td>
+								<td class="n">22.92%</td>
+								<td class="n">424 000,00 €</td>
+								<td class="n">8 833,33 €</td>
+								<td class="c">160</td><td></td><td class="c">7</td><td class="c">6</td><td></td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss Kommunales</td>
+								<td class="n">31</td>
+								<td class="n">6</td>
+								<td class="n">19.35%</td>
+								<td class="n">413 000,00 €</td>
+								<td class="n">13 322,58 €</td>
+								<td class="c">38</td><td class="c">74</td><td class="c">8</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Haushaltsausschuss</td>
+								<td class="n">88</td>
+								<td class="n">9</td>
+								<td class="n">10.23%</td>
+								<td class="n">380 000,00 €</td>
+								<td class="n">4 318,18 €</td>
+								<td class="c">259</td><td class="c">2</td><td class="c">2</td><td></td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Recht und Verbraucherschutz</td>
+								<td class="n">83</td>
+								<td class="n">8</td>
+								<td class="n">9.64%</td>
+								<td class="n">374 000,00 €</td>
+								<td class="n">4 506,02 €</td>
+								<td class="c">150</td><td></td><td class="c">2</td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Innenausschuss</td>
+								<td class="n">80</td>
+								<td class="n">5</td>
+								<td class="n">6.25%</td>
+								<td class="n">317 000,00 €</td>
+								<td class="n">3 962,50 €</td>
+								<td class="c">112</td><td></td><td class="c">5</td><td class="c">6</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Sportausschuss</td>
+								<td class="n">42</td>
+								<td class="n">4</td>
+								<td class="n">9.52%</td>
+								<td class="n">284 500,00 €</td>
+								<td class="n">6 773,81 €</td>
+								<td class="c">148</td><td class="c">31</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>5. Untersuchungsausschuss</td>
+								<td class="n">22</td>
+								<td class="n">2</td>
+								<td class="n">9.09%</td>
+								<td class="n">264 000,00 €</td>
+								<td class="n">12 000,00 €</td>
+								<td class="c">74</td><td></td><td class="c">10</td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Arbeit und Soziales</td>
+								<td class="n">89</td>
+								<td class="n">5</td>
+								<td class="n">5.62%</td>
+								<td class="n">256 000,00 €</td>
+								<td class="n">2 876,40 €</td>
+								<td class="c">79</td><td></td><td class="c">1</td><td></td><td class="c">4</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Tourismus</td>
+								<td class="n">40</td>
+								<td class="n">2</td>
+								<td class="n">5.00%</td>
+								<td class="n">218 500,00 €</td>
+								<td class="n">5 462,50 €</td>
+								<td></td><td class="c">31</td><td></td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss &quot;Auswärtige Kultur- und Bildungspolitik&quot;</td>
+								<td class="n">24</td>
+								<td class="n">7</td>
+								<td class="n">29.17%</td>
+								<td class="n">217 000,00 €</td>
+								<td class="n">9 041,67 €</td>
+								<td class="c">2</td><td class="c">2</td><td class="c">4</td><td class="c">12</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Wahlprüfung, Immunität und Geschäftsordnung</td>
+								<td class="n">34</td>
+								<td class="n">3</td>
+								<td class="n">8.82%</td>
+								<td class="n">211 000,00 €</td>
+								<td class="n">6 205,88 €</td>
+								<td class="c">1</td><td></td><td></td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Familie, Senioren, Frauen und Jugend</td>
+								<td class="n">78</td>
+								<td class="n">4</td>
+								<td class="n">5.13%</td>
+								<td class="n">203 000,00 €</td>
+								<td class="n">2 602,56 €</td>
+								<td class="c">47</td><td></td><td class="c">3</td><td class="c">1</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Petitionsausschuss</td>
+								<td class="n">58</td>
+								<td class="n">4</td>
+								<td class="n">6.90%</td>
+								<td class="n">180 000,00 €</td>
+								<td class="n">3 103,45 €</td>
+								<td class="c">113</td><td></td><td class="c">1</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>1. Untersuchungsausschuss (&quot;NSA&quot;)</td>
+								<td class="n">22</td>
+								<td class="n">4</td>
+								<td class="n">18.18%</td>
+								<td class="n">159 000,00 €</td>
+								<td class="n">7 227,27 €</td>
+								<td class="c">144</td><td></td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Wahlausschuss</td>
+								<td class="n">25</td>
+								<td class="n">2</td>
+								<td class="n">8.00%</td>
+								<td class="n">147 000,00 €</td>
+								<td class="n">5 880,00 €</td>
+								<td class="c">37</td><td></td><td></td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Der Ältestenrat</td>
+								<td class="n">37</td>
+								<td class="n">4</td>
+								<td class="n">10.81%</td>
+								<td class="n">139 000,00 €</td>
+								<td class="n">3 756,76 €</td>
+								<td class="c">39</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss Regionale Wirtschaftspolitik und ERP-Wirtschaftspläne</td>
+								<td class="n">20</td>
+								<td class="n">4</td>
+								<td class="n">20.00%</td>
+								<td class="n">139 000,00 €</td>
+								<td class="n">6 950,00 €</td>
+								<td class="c">111</td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>4. Untersuchungsausschuss</td>
+								<td class="n">22</td>
+								<td class="n">3</td>
+								<td class="n">13.64%</td>
+								<td class="n">118 000,00 €</td>
+								<td class="n">5 363,64 €</td>
+								<td class="c">111</td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss zu Fragen der Europäischen Union</td>
+								<td class="n">18</td>
+								<td class="n">5</td>
+								<td class="n">27.78%</td>
+								<td class="n">116 000,00 €</td>
+								<td class="n">6 444,44 €</td>
+								<td class="c">74</td><td></td><td class="c">6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Parlamentarisches Finanzmarktgremium</td>
+								<td class="n">10</td>
+								<td class="n">2</td>
+								<td class="n">20.00%</td>
+								<td class="n">114 500,00 €</td>
+								<td class="n">11 450,00 €</td>
+								<td class="c">111</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Parlamentarischer Beirat für nachhaltige Entwicklung</td>
+								<td class="n">40</td>
+								<td class="n">3</td>
+								<td class="n">7.50%</td>
+								<td class="n">113 000,00 €</td>
+								<td class="n">2 825,00 €</td>
+								<td class="c">38</td><td></td><td></td><td class="c">5</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>2. Untersuchungsausschuss</td>
+								<td class="n">22</td>
+								<td class="n">1</td>
+								<td class="n">4.55%</td>
+								<td class="n">110 000,00 €</td>
+								<td class="n">5 000,00 €</td>
+								<td></td><td></td><td></td><td class="c">2</td><td class="c">1</td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Wahlprüfungsausschuss</td>
+								<td class="n">20</td>
+								<td class="n">1</td>
+								<td class="n">5.00%</td>
+								<td class="n">100 000,00 €</td>
+								<td class="n">5 000,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Kultur und Medien</td>
+								<td class="n">42</td>
+								<td class="n">2</td>
+								<td class="n">4.76%</td>
+								<td class="n">97 000,00 €</td>
+								<td class="n">2 309,52 €</td>
+								<td class="c">37</td><td></td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss Europarecht</td>
+								<td class="n">21</td>
+								<td class="n">3</td>
+								<td class="n">14.29%</td>
+								<td class="n">75 000,00 €</td>
+								<td class="n">3 571,43 €</td>
+								<td class="c">75</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Rechnungsprüfungsausschuss</td>
+								<td class="n">23</td>
+								<td class="n">2</td>
+								<td class="n">8.70%</td>
+								<td class="n">74 000,00 €</td>
+								<td class="n">3 217,39 €</td>
+								<td class="c">74</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Gremium nach Artikel 13 Absatz 6 des Grundgesetzes</td>
+								<td class="n">10</td>
+								<td class="n">2</td>
+								<td class="n">20.00%</td>
+								<td class="n">74 000,00 €</td>
+								<td class="n">7 400,00 €</td>
+								<td class="c">74</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss für Zivile Krisenprävention, Konfliktbearbeitung und vernetztes Handeln</td>
+								<td class="n">23</td>
+								<td class="n">3</td>
+								<td class="n">13.04%</td>
+								<td class="n">70 000,00 €</td>
+								<td class="n">3 043,48 €</td>
+								<td class="c">42</td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Verteidigungsausschuss</td>
+								<td class="n">70</td>
+								<td class="n">2</td>
+								<td class="n">2.86%</td>
+								<td class="n">44 000,00 €</td>
+								<td class="n">628,57 €</td>
+								<td class="c">37</td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss Digitale Agenda</td>
+								<td class="n">38</td>
+								<td class="n">3</td>
+								<td class="n">7.89%</td>
+								<td class="n">40 000,00 €</td>
+								<td class="n">1 052,63 €</td>
+								<td class="c">40</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Ausschuss für Menschenrechte und humanitäre Hilfe</td>
+								<td class="n">37</td>
+								<td class="n">4</td>
+								<td class="n">10.81%</td>
+								<td class="n">37 000,00 €</td>
+								<td class="n">1 000,00 €</td>
+								<td class="c">2</td><td class="c">2</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Parlamentarisches Kontrollgremium (PKGr)</td>
+								<td class="n">11</td>
+								<td class="n">1</td>
+								<td class="n">9.09%</td>
+								<td class="n">37 000,00 €</td>
+								<td class="n">3 363,64 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Schriftführer&#x2F;in</td>
+								<td class="n">64</td>
+								<td class="n">2</td>
+								<td class="n">3.13%</td>
+								<td class="n">15 000,00 €</td>
+								<td class="n">234,38 €</td>
+								<td class="c">1</td><td class="c">2</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss &quot;Bürgerschaftliches Engagement&quot;</td>
+								<td class="n">32</td>
+								<td class="n">1</td>
+								<td class="n">3.13%</td>
+								<td class="n">8 000,00 €</td>
+								<td class="n">250,00 €</td>
+								<td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Kinderkommission - Kommission zur Wahrnehmung der Belange der Kinder</td>
+								<td class="n">9</td>
+								<td class="n">1</td>
+								<td class="n">11.11%</td>
+								<td class="n">8 000,00 €</td>
+								<td class="n">888,89 €</td>
+								<td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Gremium nach § 23c Absatz 8 des Zollfahndungsdienstgesetzes</td>
+								<td class="n">10</td>
+								<td class="n">2</td>
+								<td class="n">20.00%</td>
+								<td class="n">2 000,00 €</td>
+								<td class="n">200,00 €</td>
+								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>3. Untersuchungsausschuss</td>
+								<td class="n">21</td>
+								<td class="n">0</td>
+								<td class="n">0.00%</td>
+								<td class="n">0,00 €</td>
+								<td class="n">0,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Kuratorium der Bundeszentrale für politische Bildung</td>
+								<td class="n">24</td>
+								<td class="n">0</td>
+								<td class="n">0.00%</td>
+								<td class="n">0,00 €</td>
+								<td class="n">0,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Unterausschuss &quot;Abrüstung, Rüstungskontrolle und Nichtverbreitung&quot;</td>
+								<td class="n">24</td>
+								<td class="n">0</td>
+								<td class="n">0.00%</td>
+								<td class="n">0,00 €</td>
+								<td class="n">0,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="laender">
+					<h2>Bundesländer</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Bundesland</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Bayern</td>
+								<td class="n">92</td>
+								<td class="n">16</td>
+								<td class="n">17.39%</td>
+								<td class="n">2 718 500,00 €</td>
+								<td class="n">29 548,91 €</td>
+								<td class="c">239</td><td class="c">95</td><td class="c">16</td><td class="c">6</td><td class="c">9</td><td class="c">2</td><td class="c">1</td><td class="c">2</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+							<tr>
+								<td>Nordrhein-Westfalen</td>
+								<td class="n">145</td>
+								<td class="n">16</td>
+								<td class="n">11.03%</td>
+								<td class="n">2 295 500,00 €</td>
+								<td class="n">15 831,03 €</td>
+								<td class="c">77</td><td class="c">71</td><td class="c">105</td><td class="c">22</td><td class="c">6</td><td class="c">3</td><td class="c">1</td><td class="c">5</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Niedersachsen</td>
+								<td class="n">68</td>
+								<td class="n">11</td>
+								<td class="n">16.18%</td>
+								<td class="n">856 000,00 €</td>
+								<td class="n">12 588,24 €</td>
+								<td class="c">290</td><td class="c">68</td><td class="c">14</td><td class="c">12</td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Baden-Württemberg</td>
+								<td class="n">81</td>
+								<td class="n">8</td>
+								<td class="n">9.88%</td>
+								<td class="n">358 500,00 €</td>
+								<td class="n">4 425,93 €</td>
+								<td class="c">149</td><td class="c">1</td><td class="c">13</td><td class="c">1</td><td></td><td></td><td></td><td class="c">1</td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Rheinland-Pfalz</td>
+								<td class="n">32</td>
+								<td class="n">4</td>
+								<td class="n">12.50%</td>
+								<td class="n">313 000,00 €</td>
+								<td class="n">9 781,25 €</td>
+								<td class="c">183</td><td></td><td class="c">10</td><td class="c">2</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Schleswig-Holstein</td>
+								<td class="n">25</td>
+								<td class="n">1</td>
+								<td class="n">4.00%</td>
+								<td class="n">161 000,00 €</td>
+								<td class="n">6 440,00 €</td>
+								<td></td><td class="c">22</td><td class="c">12</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Thüringen</td>
+								<td class="n">18</td>
+								<td class="n">4</td>
+								<td class="n">22.22%</td>
+								<td class="n">137 500,00 €</td>
+								<td class="n">7 638,89 €</td>
+								<td class="c">74</td><td class="c">1</td><td></td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Sachsen</td>
+								<td class="n">34</td>
+								<td class="n">3</td>
+								<td class="n">8.82%</td>
+								<td class="n">67 000,00 €</td>
+								<td class="n">1 970,59 €</td>
+								<td class="c">53</td><td></td><td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Berlin</td>
+								<td class="n">27</td>
+								<td class="n">2</td>
+								<td class="n">7.41%</td>
+								<td class="n">44 000,00 €</td>
+								<td class="n">1 629,63 €</td>
+								<td class="c">37</td><td></td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Hamburg</td>
+								<td class="n">13</td>
+								<td class="n">1</td>
+								<td class="n">7.69%</td>
+								<td class="n">37 000,00 €</td>
+								<td class="n">2 846,15 €</td>
+								<td class="c">37</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Saarland</td>
+								<td class="n">10</td>
+								<td class="n">1</td>
+								<td class="n">10.00%</td>
+								<td class="n">18 000,00 €</td>
+								<td class="n">1 800,00 €</td>
+								<td class="c">4</td><td class="c">4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Hessen</td>
+								<td class="n">46</td>
+								<td class="n">3</td>
+								<td class="n">6.52%</td>
+								<td class="n">16 000,00 €</td>
+								<td class="n">347,83 €</td>
+								<td class="c">2</td><td class="c">2</td><td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Bremen</td>
+								<td class="n">8</td>
+								<td class="n">1</td>
+								<td class="n">12.50%</td>
+								<td class="n">2 000,00 €</td>
+								<td class="n">250,00 €</td>
+								<td class="c">2</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Sachsen-Anhalt</td>
+								<td class="n">19</td>
+								<td class="n">1</td>
+								<td class="n">5.26%</td>
+								<td class="n">1 000,00 €</td>
+								<td class="n">52,63 €</td>
+								<td class="c">1</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Mecklenburg-Vorpommern</td>
+								<td class="n">13</td>
+								<td class="n">0</td>
+								<td class="n">0.00%</td>
+								<td class="n">0,00 €</td>
+								<td class="n">0,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+							<tr>
+								<td>Brandenburg</td>
+								<td class="n">21</td>
+								<td class="n">0</td>
+								<td class="n">0.00%</td>
+								<td class="n">0,00 €</td>
+								<td class="n">0,00 €</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="geschlecht">
+					<h2>Geschlecht</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Geschlecht</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Männer</td>
+								<td class="n">421</td>
+								<td class="n">59</td>
+								<td class="n">14.01%</td>
+								<td class="n">6 579 500,00 €</td>
+								<td class="n">15 628,27 €</td>
+								<td class="c">952</td><td class="c">261</td><td class="c">157</td><td class="c">39</td><td class="c">16</td><td class="c">6</td><td class="c">2</td><td class="c">8</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+							<tr>
+								<td>Frauen</td>
+								<td class="n">231</td>
+								<td class="n">13</td>
+								<td class="n">5.63%</td>
+								<td class="n">445 500,00 €</td>
+								<td class="n">1 928,57 €</td>
+								<td class="c">196</td><td class="c">3</td><td class="c">17</td><td class="c">8</td><td></td><td></td><td></td><td></td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="mandate">
+					<h2>Mandate</h2>
+					<table class="table table-striped table-bordered table-condensed table-responsive">
+						<thead>
+							<tr>
+								<td rowspan="2">Mandat</td>
+								<td rowspan="2" class="digit">Abgeordnete</td>
+								<td rowspan="2" class="digit">mit Nebeneinkünften</td>
+								<td rowspan="2" class="digit">%</td>
+								<td rowspan="2" class="currency">Gesamtbetrag (Minimum)</td>
+								<td rowspan="2" class="currency">Durchschnitt (Minimum)</td>
+								<td colspan="10">Stufen*</td>
+							</tr>
+							<tr>
+								<td class="c">1</td>
+								<td class="c">2</td>
+								<td class="c">3</td>
+								<td class="c">4</td>
+								<td class="c">5</td>
+								<td class="c">6</td>
+								<td class="c">7</td>
+								<td class="c">8</td>
+								<td class="c">9</td>
+								<td class="c">10</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Direkt gewählt</td>
+								<td class="n">299</td>
+								<td class="n">33</td>
+								<td class="n">11.04%</td>
+								<td class="n">4 436 000,00 €</td>
+								<td class="n">14 836,12 €</td>
+								<td class="c">556</td><td class="c">154</td><td class="c">108</td><td class="c">17</td><td class="c">11</td><td class="c">5</td><td class="c">2</td><td class="c">3</td><td class="c">2</td><td class="c">4</td>
+							</tr>
+							<tr>
+								<td>Über Liste</td>
+								<td class="n">353</td>
+								<td class="n">39</td>
+								<td class="n">11.05%</td>
+								<td class="n">2 589 000,00 €</td>
+								<td class="n">7 334,28 €</td>
+								<td class="c">592</td><td class="c">110</td><td class="c">66</td><td class="c">30</td><td class="c">5</td><td class="c">1</td><td></td><td class="c">5</td><td></td><td></td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article class="tab-pane" id="erlaeuterungen">
+					<h2>Erläuterungen</h2>
+					<p>Die Angaben wurden aus den <a href="http://www.bundestag.de/bundestag/abgeordnete18/biografien/">Abgeordneten-Biografien auf der Webeite des des Deutschen Bundestags</a> automatisiert zusammengestellt. Da die Daten dort nicht in einem konsitenten maschinenlesbaren Format vorliegen können wir Fehler und Irrtümer nicht auschließen.</p>
+					<p>Bei allen Beträgen handelt es sich um den minimalen Betrag, der für die Angabe einer Stufe notwendig ist. Die realen Nebeneinkünfte liegen aller Wahrscheinlichkeit nach höher. Höchstbeträge konnten nicht berücksichtigt werden, da in der höchsten Stufe kein maximaler Betrag festgelegt ist. Einkünfte der Stufe 0 wurden nicht berücksichtigt.</p>
+					<p>Die errechneten Beträge sind die Summe aus einmaligen Einkünften, jährlichen Einkünften für jedes begonnene Kalenderjahr der laufenden Legislatur und monatlichen Einkünften für jeden begonnenen Kalendermonat der laufenden Legislatur, sofern kein Beginn oder Ende angegeben wurde. Kurz zusammengefasst: Mindestens diesen Betrag hat der oder die Abgeordnete seit der Wahl dazuverdient.</p>
+					<p>Erläuterungen zu den veröffentlichungspflichtigen Angaben finden sich <a href="http://www.bundestag.de/bundestag/abgeordnete18/nebentaetigkeit">auf der Webseite des Deutschen Bundestages</a>.</p>
+				</article>
+				<article class="tab-pane" id="daten">
+					<h2>Daten</h2>
+					<p>Die zu Grunde liegenden Daten stehen zum Download zur Verfügung: <a href="data/data.json">JSON</a> oder <a href="data/data.tsv">TSV</a></p>
+					<p>Der Quelltext der Software wurde unter Public Domain <a href="https://github.com/opendatacity/nebeneinkuenfte">auf GitHub veröffentlicht</a>.</p>
+					<p>Die Daten wurden zuletzt aktualisiert am 11.10.2016 00:01.</p>
+				</article>
+                <article class="tab-pane" id="graph">
+                    <h2>Diagramme</h2>
+					<select id="chart-select"></select> nach <select id="chart-data-select"></select>
+                    <div id="chart"></div>
+                </article>
+				<div id="footnote">
+					<strong>* Stufen:</strong>
+					<span><strong>1</strong> über 1&#8239;000&#8239;€</span>
+					<span><strong>2</strong> über 3&#8239;500&#8239;€</span>
+					<span><strong>3</strong> über 7&#8239;000&#8239;€</span>
+					<span><strong>4</strong> über 15&#8239;000&#8239;€</span>
+					<span><strong>5</strong> über 30&#8239;000&#8239;€</span>
+					<span><strong>6</strong> über 50&#8239;000&#8239;€</span>
+					<span><strong>7</strong> über 75&#8239;000&#8239;€</span>
+					<span><strong>8</strong> über 100&#8239;000&#8239;€</span>
+					<span><strong>9</strong> über 150&#8239;000&#8239;€</span>
+					<span><strong>10</strong> über 250&#8239;000&#8239;€</span>
+				</div>
+			</div>
+		</div>
+		<footer class="clearfix">
+			<div class="pull-left">Ein Informationsangebot von <a href="https://opendatacity.de/" class="odc" rel="follow" title="OpenDataCity">OpenDataCity</a>
+				<!--und <a href="https://www.lobbycontrol.de/" class="lobbycontrol" rel="follow" title="LobbyControl – Initiative für Transparenz und Demokratie e.V.">LobbyControl e.V.</a>-->
+			</div>
+			<div class="pull-right">Stand: 11.10.2016 00:01 - Lizenz: <a href="http://creativecommons.org/licenses/by/3.0/de/">CC BY 3.0 DE</a> - <a href="https://github.com/opendatacity/nebeneinkuenfte">Quellcode</a></div>
+		</footer>
+	</body>
+</html>
