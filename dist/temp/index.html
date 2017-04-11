@@ -1,0 +1,89 @@
+<html lang="de">
+
+<head>
+	<meta charset="utf-8" />
+
+	<title></title>
+
+	<link rel="stylesheet" href="css/screen.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+</head>
+<body>
+	<svg id="parliament">
+	</svg>
+	<div id="repInspector">
+		<h2><a href="#" class="name"></a></h2>
+		<p><span class="faction"></span> <span class="land"></span> <span class="mandate"></span></p>
+
+		<table class="nebeneinkuenfte">
+			<caption><span class="count">Nebeneinkünfte</span> (<abbr title="mindestens">min.</abbr> <span class="number minSum"></span>)</caption>
+			<thead>
+				<tr>
+					<th>Tätigkeit</th>
+					<th class="number">Einkünfte&nbsp;<abbr title="mindestens">min.</abbr></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="nebeneinkunft">
+					<td class="description"></td>
+					<td class="number minAmount"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th class="number">Summe <abbr title="mindestens">min.</abbr></th>
+					<td class="number minSum"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<form action="/">
+		<fieldset>
+			<legend>Bundesland</legend>
+			<input type="hidden" name="land" value="">
+			<ul>
+				<li><label><input type="checkbox" checked name="land" value="Baden-Württemberg"> Baden-Württemberg</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Bayern"> Bayern</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Berlin"> Berlin</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Brandenburg"> Brandenburg</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Bremen"> Bremen</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Hamburg"> Hamburg</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Hessen"> Hessen</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Mecklenburg-Vorpommern"> Mecklenburg-Vorpommern</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Niedersachsen"> Niedersachsen</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Nordrhein-Westfalen"> Nordrhein-Westfalen</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Rheinland-Pfalz"> Rheinland-Pfalz</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Saarland"> Saarland</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Sachsen"> Sachsen</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Sachsen-Anhalt"> Sachsen-Anhalt</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Schleswig-Holstein"> Schleswig-Holstein</label></li>
+				<li><label><input type="checkbox" checked name="land" value="Thüringen"> Thüringen</label></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<input type="hidden" name="gender" value="">
+			<legend>Geschlecht</legend>
+			<ul>
+				<li><label><input type="checkbox" checked name="gender" value="f"> weiblich</label></li>
+				<li><label><input type="checkbox" checked name="gender" value="m"> männlich</label></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<input type="hidden" name="mandat" value="">
+			<legend>Mandat</legend>
+			<ul>
+				<li><label><input type="checkbox" checked name="mandat" value="liste"> Listenmandat</label></li>
+				<li><label><input type="checkbox" checked name="mandat" value="direkt"> Direktmandat</label></li>
+			</ul>
+		</fieldset>
+		<input type="submit">
+	</form>
+	<script src="js/lib/d3.min.js" charset="utf-8"></script>
+	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+	<script src="bower_components/lodash/dist/lodash.js" charset="utf-8"></script>
+	<script src="js/de-de.dict.js" charset="utf-8"></script>
+	<script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>

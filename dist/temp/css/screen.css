@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font: 1em/1.2em Georgia, serif; }
+
+a:link {
+  text-decoration: none;
+  color: #043a66; }
+a:visited {
+  color: #065697; }
+
+#parliament {
+  transform-origin: top left; }
+
+fieldset {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none; }
+  fieldset legend {
+    font: 1em/1.2 Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: bold;
+    margin: 1em 0 .2em 0; }
+  fieldset ul {
+    list-style: none;
+    padding-left: .4em;
+    margin: 0 0 0 .4em;
+    border-left: 1px solid #eee; }
+  fieldset li label {
+    font-family: Montserrat, sans-serif;
+    cursor: pointer;
+    display: block;
+    color: #555;
+    min-height: 1.3em; }
+    fieldset li label:before {
+      display: inline-block;
+      content: ' ';
+      width: .75em;
+      margin-left: -.8em; }
+
+input[type=checkbox] {
+  display: none; }
+
+label.active {
+  color: #000; }
+  label.active:before {
+    content: '✓';
+    background-color: #fff; }
+
+input[type=submit] {
+  display: none; }
+
+.linke {
+  color: #d703d7;
+  fill: #d703d7; }
+
+.spd {
+  color: #da0000;
+  fill: #da0000; }
+
+.gruene {
+  color: #58d300;
+  fill: #58d300; }
+
+.cducsu {
+  color: #333;
+  fill: #333; }
+
+.arc {
+  opacity: 0.1; }
+
+.hidden {
+  display: none; }
+
+#repInspector {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: .5em;
+  transition: width .2s ease;
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1); }
+  #repInspector.moving {
+    pointer-events: none; }
+    #repInspector.moving thead, #repInspector.moving tbody, #repInspector.moving tfoot {
+      display: none; }
+    #repInspector.moving caption {
+      font-style: italic;
+      text-align: left; }
+      #repInspector.moving caption:after {
+        content: ' – Für Details klicken'; }
+  #repInspector.fixed {
+    width: 20em; }
+    #repInspector.fixed caption {
+      display: none; }
+  #repInspector h2 {
+    font: 1em/1.2 Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-weight: bold;
+    margin: .2em 0 .5em; }
+  #repInspector .faction {
+    text-transform: uppercase; }
+  #repInspector .faction, #repInspector .land, #repInspector .mandate {
+    font: 0.8em Montserrat, sans-serif; }
+  #repInspector .faction, #repInspector .land {
+    padding-right: .5em;
+    margin-right: .1em;
+    border-right: 1px solid rgba(0, 0, 0, 0.2); }
+  #repInspector tr.cat0 {
+    opacity: .4; }
+  #repInspector table {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    border-collapse: collapse;
+    font-size: .8em; }
+  #repInspector thead {
+    top: 0; }
+    #repInspector thead th {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+  #repInspector tfoot th, #repInspector tfoot td {
+    border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  #repInspector thead, #repInspector tbody, #repInspector tfoot {
+    display: block; }
+  #repInspector tbody {
+    max-height: 20em;
+    overflow: auto; }
+  #repInspector .minAmount, #repInspector .minSum {
+    text-align: right;
+    min-width: 5em; }
+  #repInspector td, #repInspector th {
+    width: 100%;
+    vertical-align: bottom; }
+  #repInspector th {
+    text-align: left;
+    font: 1em/1.2 Montserrat, sans-serif; }
+  #repInspector th.number {
+    text-align: right; }
+  #repInspector td, #repInspector th, #repInspector tbody:after {
+    padding: .4em 0; }
+
+.number {
+  white-space: nowrap;
+  text-align: right; }

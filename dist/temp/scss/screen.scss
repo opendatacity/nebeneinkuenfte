@@ -1,0 +1,182 @@
+@import 'globals';
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	font: 1em/1.2em $primaryFont;
+}
+a {
+	&:link {
+		text-decoration: none;
+		color: $linkColor;
+	}
+	&:visited {
+		color: lighten($linkColor, 10);
+	}
+}
+
+#parliament {
+	transform-origin: top left;
+	//max-width: 100%;
+}
+
+@mixin minorHeading {
+	font: 1em/1.2 $secondaryFont;
+}
+@mixin heading {
+	@include minorHeading;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	font-weight: bold;	
+}
+
+fieldset {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	legend {
+		@include heading;
+		margin: 1em 0 .2em 0;
+	}
+	ul {
+		list-style: none;
+		padding-left: .4em;
+		margin: 0 0 0 .4em;
+		border-left: 1px solid #eee;
+	}
+	li {
+		label {
+			font-family: $secondaryFont;
+			cursor: pointer;
+			display: block;
+			color: #555;
+			min-height: 1.3em;
+			&:before {
+				display: inline-block;
+				content: ' ';
+				width: .75em;
+				margin-left: -.8em;
+			}
+		}
+	}
+}
+input[type=checkbox] {
+	display: none;
+}
+label:hover {
+}
+label.active {
+	color: #000;
+	&:before {
+		content: '✓';
+		background-color: #fff;
+	}
+}
+input[type=submit] { display: none; }
+
+.linke {  color: #d703d7; fill: #d703d7; }
+.spd {    color: #da0000; fill: #da0000; }
+.gruene { color: #58d300; fill: #58d300; }
+.cducsu { color: #333;    fill: #333;    }
+//.wrongPlacement { stroke: #fff; stroke-width: 3px; }
+
+.arc {
+	opacity: 0.1;
+}
+
+.hidden { display: none; }
+
+#repInspector {
+	position: absolute;
+	background-color: rgba(#fff, .95);
+	padding: .5em;
+	transition: width .2s ease;
+	box-shadow: 0 .1em .5em rgba(#000, .1);
+
+	&.moving {
+		//width: 15em;
+		pointer-events: none;
+		thead, tbody, tfoot { display: none; }
+		caption {
+			font-style: italic;
+			text-align: left;
+			&:after {
+				content: ' – Für Details klicken';
+			}
+		}
+	}
+	&.fixed {
+		width: 20em;
+		caption {
+			display: none;
+		}
+	}
+
+	h2 {
+		@include heading;
+		margin: .2em 0 .5em;
+	}
+	.faction {
+		text-transform: uppercase;
+	}
+	.faction, .land, .mandate {
+		font: .8em $secondaryFont;
+	}
+	.faction, .land {
+		padding-right: .5em;
+		margin-right: .1em;
+		border-right: 1px solid rgba(#000, .2);
+	}
+
+	tr.cat0 {
+		opacity: .4;
+	}
+	table {
+		width: 100%;
+		display: block;
+		overflow: auto;
+		border-collapse: collapse;
+		font-size: .8em;
+	}
+	thead {
+		// position: absolute;
+		top: 0;
+		th {
+			border-bottom: 1px solid rgba(#000, .05);
+		}
+	}
+	tfoot th, tfoot td {
+		border-top: 1px solid rgba(#000, .05);
+	}
+	thead, tbody, tfoot {
+		display: block;
+	}
+	tbody {
+		max-height: 20em;
+		overflow: auto;
+	}
+	.minAmount, .minSum {
+		text-align: right;
+		min-width: 5em;
+	}
+	td, th {
+		width: 100%;
+		vertical-align: bottom;
+	}
+	th {
+		text-align: left;
+		@include minorHeading;
+	}
+	th.number {
+		text-align: right;
+	}
+
+	td, th, tbody:after {
+		padding: .4em 0;
+	}
+}
+.number {
+	white-space: nowrap;
+	text-align: right;
+}
